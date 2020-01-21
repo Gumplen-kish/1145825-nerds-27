@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Куртасов](https://up.htmlacademy.ru/htmlcss/27/user/1145825).
-* Наставник:[Анна Понамарёва] (https://htmlacademy.ru/profile/id153610).
+* Наставник:[Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
