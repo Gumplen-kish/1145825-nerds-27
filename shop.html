@@ -25,22 +25,28 @@
         <h1 class="shop-template">Магазин готовых шаблонов</h1>
         
         <div class="grid">
-            <form action="#" method="post">
-                <p>Сетка:</p>
-                <label for="adaptive">Адаптивная</label>
-                <input name="adaptive" type="radio" id="adaptive"checked>
-                <label for="fixed">Фиксированная</label>
-                <input name="fixed" type="radio" id="fixed">
-                <label for="rubber">Резиновая</label>
-                <input name="rubber" type="radio" id="rubber">
-                
-                <p>Особенности:</p>
-                <p><input type="checkbox" name="a" value="Слайдеры" checked>Слайдеры</p>
-                <p><input type="checkbox" name="a" value="Блок преимуществ">Блок преимуществ</p>
-                <p><input type="checkbox" name="a" value="Новости" checked>Новости</p>
-                <p><input type="checkbox" name="a" value="Галерея">Галерея</p>
-                <p><input type="checkbox" name="a" value="Корзина">Корзина</p>
-                <p><input type="submit" value="Показать"></p> <---! Не знаю верно-ли?!--->
+            <form action="#" method="post" oninput="dayscountval.value=dayscount.value">
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <input type="range" id="dayscount" name="dayscount" min="0" max="15000" step="1">
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <label for="adaptive">Адаптивная</label>
+                    <input name="adaptive" type="radio" id="adaptive"checked>
+                    <label for="fixed">Фиксированная</label>
+                    <input name="fixed" type="radio" id="fixed">
+                    <label for="rubber">Резиновая</label>
+                    <input name="rubber" type="radio" id="rubber">
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <p><input type="checkbox" name="a" value="Слайдеры" checked>Слайдеры</p>
+                    <p><input type="checkbox" name="a" value="Блок преимуществ">Блок преимуществ</p>
+                    <p><input type="checkbox" name="a" value="Новости" checked>Новости</p>
+                    <p><input type="checkbox" name="a" value="Галерея">Галерея</p>
+                    <p><input type="checkbox" name="a" value="Корзина">Корзина</p>
+                    <p><input type="submit" value="Показать"></p> <---! Не знаю верно-ли?!--->
+                </fieldset>
             </form>
         </div>
 
@@ -60,45 +66,45 @@
                 </div>
             </article>
 
-        <article class="pink">
-            <h1 class="visually-hidden">Пинк</h1>
-            <img src="img/img-pink-jpg.png"
-            srcset="img/img-pink-jpg@2x.png 2x,
-            img/img-pink-jpg@3x.png 3x"
-            class="img-pinkjpg">
-        </article>
+            <article class="pink">
+                <h1 class="visually-hidden">Пинк</h1>
+                <img src="img/img-pink-jpg.png"
+                srcset="img/img-pink-jpg@2x.png 2x,
+                img/img-pink-jpg@3x.png 3x"
+                class="img-pinkjpg">
+            </article>
 
-        <article class="borodinski">
-            <h1 class=visually-hidden>Бородинский</h1>  
-            <img src="img/img-barbershop-jpg.png"
-            srcset="img/img-barbershop-jpg@2x.png 2x,
-             img/img-barbershop-jpg@3x.png 3x"
-            class="img-barbershopjpg">
-        </article>
+            <article class="borodinski">
+                <h1 class=visually-hidden>Бородинский</h1>  
+                <img src="img/img-barbershop-jpg.png"
+                srcset="img/img-barbershop-jpg@2x.png 2x,
+                img/img-barbershop-jpg@3x.png 3x"
+                class="img-barbershopjpg">
+            </article>
 
-        <article class="mishka">
-            <h1 class="visually-hidden">Мишка</h1> 
-           <img src="img/img-mishka-jpg.png"
-            srcset="img/img-mishka-jpg@2x.png 2x,
-            img/img-mishka-jpg@3x.png 3x"
-            class="img-mishkajpg">
-        </article>
+            <article class="mishka">
+                <h1 class="visually-hidden">Мишка</h1> 
+                <img src="img/img-mishka-jpg.png"
+                srcset="img/img-mishka-jpg@2x.png 2x,
+                img/img-mishka-jpg@3x.png 3x"
+                class="img-mishkajpg">
+            </article>
 
-        <article class="aplus">
-            <h1 class="visually-hidden">Мишка</h1>
-            <img src="img/img-aplus-jpg.png"
-            srcset="img/img-aplus-jpg@2x.png 2x,
-            img/img-aplus-jpg@3x.png 3x"
-            class="img-aplusjpg">
-        </article>
+            <article class="aplus">
+                <h1 class="visually-hidden">Мишка</h1>
+                <img src="img/img-aplus-jpg.png"
+                srcset="img/img-aplus-jpg@2x.png 2x,
+                img/img-aplus-jpg@3x.png 3x"
+                class="img-aplusjpg">
+            </article>
 
-        <article class="kvast">
-            <h1 class="visually-hidden">Кваст</h1> 
-            <img src="img/img-kvast-jpg.png"
-            srcset="img/img-kvast-jpg@2x.png 2x,
-            img/img-kvast-jpg@3x.png 3x"
-            class="img-kvastjpg">
-        </article>
+            <article class="kvast">
+                <h1 class="visually-hidden">Кваст</h1> 
+                <img src="img/img-kvast-jpg.png"
+                srcset="img/img-kvast-jpg@2x.png 2x,
+                img/img-kvast-jpg@3x.png 3x"
+                class="img-kvastjpg">
+            </article>
         
         <div>
             <a>1</a>
@@ -127,9 +133,11 @@
     <footer>
         <section class="social-network">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <src="https://vk.com/" alt="Вконтакте">
-            <src="https://ru-ru.facebook.com/" alt="Facebook">
-            <src="https://www.instagram.com/" alt="Instagram">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
         </section>
         <section>
             <h2 class="visually-hidden">Давайте дружить</h2>
