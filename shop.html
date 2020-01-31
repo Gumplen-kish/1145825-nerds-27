@@ -7,7 +7,7 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="img/nerds-logo.png" alt="Логотип компании Нёрдс">
+            <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип компании Нёрдс">
         </a>
         <nav class="main-nav">
         <ul class="site-nav">
@@ -29,24 +29,30 @@
                 <fieldset>
                     <legend>Стоимость:</legend>
                     <input type="range" id="dayscount" name="dayscount" min="0" max="15000" step="1">
+                </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
                     <label for="adaptive">Адаптивная</label>
-                    <input name="adaptive" type="radio" id="adaptive"checked>
+                    <input name="view" type="radio" id="adaptive" value="adaptive" checked>
                     <label for="fixed">Фиксированная</label>
-                    <input name="fixed" type="radio" id="fixed">
+                    <input name="view" type="radio" id="fixed" value="fixed">
                     <label for="rubber">Резиновая</label>
-                    <input name="rubber" type="radio" id="rubber">
-                    <!--доделать форму-->
+                    <input name="view" type="radio" id="rubber" value="rubber">
                 </fieldset>
                 <fieldset>
                     <legend>Особенности:</legend>
-                    <p><input type="checkbox" name="a" value="Слайдеры" checked>Слайдеры</p>
-                    <p><input type="checkbox" name="a" value="Блок преимуществ">Блок преимуществ</p>
-                    <p><input type="checkbox" name="a" value="Новости" checked>Новости</p>
-                    <p><input type="checkbox" name="a" value="Галерея">Галерея</p>
-                    <p><input type="checkbox" name="a" value="Корзина">Корзина</p>
-                    <p><input type="submit" value="Показать"></p> <---! Не знаю верно-ли?!--->
+                    <label for="sliders">Слайдеры</label>
+                    <input type="checkbox" name="sliders" value="sliders" id="sliders" checked>
+                    <label for="block-advantage">Блок преимуществ</label>
+                    <input type="checkbox" name="block-advantage" value="block-advantage" id="block-advantage">
+                    <label for="news">Новости</label>
+                    <input type="checkbox" name="news" value="news" id="news" checked>
+                    <label for="gallery">Галерея</label>
+                    <input type="checkbox" name="gallery" value="gallery" id="gallery">
+                    <label for="basket">Корзина</label>
+                    <input type="checkbox" name="basket" value="basket" id="basket">
+                    <label for="show">Показать</label>
+                    <input type="submit" name="show" value="show" id="show" >
                 </fieldset>
             </form>
         </div>
@@ -69,7 +75,7 @@
 
             <article class="pink">
                 <h1 class="visually-hidden">Пинк</h1>
-                <img src="img/img-pink-jpg.png"
+                <img src="img/img-pink-jpg.jpg"
                 srcset="img/img-pink-jpg@2x.png 2x,
                 img/img-pink-jpg@3x.png 3x"
                 class="img-pinkjpg">
@@ -85,14 +91,14 @@
 
             <article class="mishka">
                 <h1 class="visually-hidden">Мишка</h1> 
-                <img src="img/img-mishka-jpg.png"
+                <img src="img/img-mishka-jpg.jpg"
                 srcset="img/img-mishka-jpg@2x.png 2x,
                 img/img-mishka-jpg@3x.png 3x"
                 class="img-mishkajpg">
             </article>
 
             <article class="aplus">
-                <h1 class="visually-hidden">Мишка</h1>
+                <h1 class="visually-hidden">А плюс</h1>
                 <img src="img/img-aplus-jpg.png"
                 srcset="img/img-aplus-jpg@2x.png 2x,
                 img/img-aplus-jpg@3x.png 3x"
@@ -127,6 +133,18 @@
                 <span>тел.<a href="tel:+78122757575">+7(812)275-75-75</a></span>
             
                 <a href="#">>Напишите нам</a>
+                <form action="#" method="post">
+                    <fieldset>
+                    <h4 class="feedback">Напишите нам</h4>
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" name="user-name" value="user-name" id="user-name" placeholder="Имя Фамилия">
+                    <label for="email">Ваше имя:</label>
+                    <input type="email" name="email" value="email" id="email" placeholder="email@example.com">
+                    <label for="text-letter">Текст письма:</label>
+                    <textarea name="text-letter" id="text-letter"  rows="5" placeholder="В свободной форме"></textarea>
+                    <label for="send">Отправить</label>
+                    <input type="submit" name="send" value="send" id="send">
+                </form>
             </section>
         </section>
     </main>
@@ -135,9 +153,9 @@
         <section class="social-network">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="https://www.vk.com"></a></li>
+                <li><a href="https://www.facebook.com"></a></li>
+                <li><a href="https://www.instagram.com"></a></li>
             </ul>
         </section>
         <section>
