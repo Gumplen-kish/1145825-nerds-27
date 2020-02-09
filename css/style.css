@@ -1,0 +1,197 @@
+body {
+    /*Стилизуем текст всего сайта*/ 
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    text-transform: uppercase;
+}
+/*Скрытые заголовки*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.inner-page-title {
+    width: 722px;
+    height: 43px;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center; 
+}
+
+
+/*Стилизуем ссылки в nav*/
+.site-nav a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+  }
+.site-nav a:hover {
+    color: #fb565a;
+}
+.site-nav a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.main-nav {
+    width: 1440px;
+    height: 355px;
+    background-color: #eeeeee;
+    font-size: 16px;
+}
+.basket a:hover {
+    color: #fb565a;
+}
+.basket a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.site-nav, 
+.basket {
+    list-style: none;   
+}
+.basket li {
+    color: black;
+    position: relative;
+}
+.basket::before {
+    content: "";
+    position:absolute;
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-image: url("..\img\svg-nerds\cart-icon.svg")
+}
+
+
+/*Стилизуем особенности*/
+.big-word {
+    font-size: 55px;
+    line-height: 1;
+}
+.small-word {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.lern-more {
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: center;
+    color: #ffffff;
+}
+.lern-more a:hover {
+    background-color: #e74246; 
+}
+.lern-more a:active {
+    background-color: #d7373b;
+    color: (255, 255, 255, 0,3);
+}
+
+/*Наш сервис*/
+.service-image {
+    background-image: url("..\img\illustration-1.jpg");
+}
+.service-applications {
+    background-image: url("..\img\illustration-2.jpg");
+}
+.service-presentations {
+    background-image: url("..\img\illustration-3.jpg");
+}
+.service-title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: black
+}
+.service-desk {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/*Кнопки заказать в разных активностях*/
+.order-web a {
+    background-color: #fb565a;
+    color: #ffffff;
+}
+.order-web a:hover {
+    background-color:#e74246;
+    
+}
+.order-web a:active {
+    background-color: #d7373b;
+    
+}
+.order-applications a {
+    background-color:#00ca74;
+    color: #ffffff;
+}
+.order-applications a:hover {
+    background-color:#00bc6c;
+    
+}
+.order-applications a:active {
+    background-color:#00aa62;
+    
+}
+.order-presentations a {
+    background-color:#efc84a;
+    color: #ffffff;
+}
+.order-presentations a:hover {
+    background-color:#eab534;
+    
+}
+.order-presentations a:active {
+    background-color:#e5a722;
+    
+}
+/*Наши преимущества*/
+.we-first {
+    font-size: 45px;
+    line-height: 1;
+}
+.we-second {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.title-list {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.list-service li {
+    font-size: 16px;
+}
+/*Стилизуем форму обратной связи*/
+.feedback {
+    width: 306px;
+    height: 33px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+/*Стилизуем каталог*/
+
+
+/*Стилизуем подвал*/
+.main-footer {
+    width: 1440px;
+    height: 217px;
+    background-color: white;
+}
+.friend {
+    font-size: 36px;
+    line-height: 1px;
+    font-weight: bold;
+}
+.discount {
+    font-size: 16px;
+    line-height: 1.38px;
+}
+.social-list {
+    list-style: none; 
+}
