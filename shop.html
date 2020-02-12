@@ -8,58 +8,57 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="index.html">
+    <header class="page-header">
+        <a class="logo" href="index.html">
             <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип компании Нёрдс">
         </a>
         <nav class="main-nav">
-        <ul class="site-nav">
-            <li><a href="atelier.html">Студия</a></li>
-            <li><a href="customers.html">Клиенты</a></li>
-            <li><a >Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="basket">
-            <li ><a href="basket.html">Корзина</a></li>
-        </ul>
+            <ul class="site-nav">
+                <li><a href="atelier.html">Студия</a></li>
+                <li><a href="customers.html">Клиенты</a></li>
+                <li><a >Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
         </nav> 
+        <a class="basket" href="basket.html">Корзина</a>
     </header> 
     <main>
         <h1 class="inner-page-title">Магазин готовых шаблонов</h1>
         
         <div class="grid">
-            <form action="https://echo.htmlacademy.ru" method="post" oninput="dayscountval.value=dayscount.value">
+            <form class="filter-option" action="https://echo.htmlacademy.ru" method="post" oninput="dayscountval.value=dayscount.value">
                 <fieldset>
                     <legend>Стоимость:</legend>
                     <input type="range" id="dayscount" name="dayscount" min="0" max="15000" step="1">
                 </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
+                    <input class="filter-input" name="view" type="radio" id="adaptive" value="adaptive" checked><span></span>
                     <label for="adaptive">Адаптивная</label>
-                    <input name="view" type="radio" id="adaptive" value="adaptive" checked>
+                    <input class="filter-input" name="view" type="radio" id="fixed" value="fixed">
                     <label for="fixed">Фиксированная</label>
-                    <input name="view" type="radio" id="fixed" value="fixed">
+                    <input class="filter-input" name="view" type="radio" id="rubber" value="rubber">
                     <label for="rubber">Резиновая</label>
-                    <input name="view" type="radio" id="rubber" value="rubber">
                 </fieldset>
                 <fieldset>
                     <legend>Особенности:</legend>
-                    <label for="sliders">Слайдеры</label>
                     <input type="checkbox" name="sliders" value="sliders" id="sliders" checked>
-                    <label for="block-advantage">Блок преимуществ</label>
+                    <label for="sliders">Слайдеры</label>
                     <input type="checkbox" name="block-advantage" value="block-advantage" id="block-advantage">
-                    <label for="news">Новости</label>
+                    <label for="block-advantage">Блок преимуществ</label>
                     <input type="checkbox" name="news" value="news" id="news" checked>
-                    <label for="gallery">Галерея</label>
+                    <label for="news">Новости</label>
                     <input type="checkbox" name="gallery" value="gallery" id="gallery">
-                    <label for="basket">Корзина</label>
+                    <label for="gallery">Галерея</label>
                     <input type="checkbox" name="basket" value="basket" id="basket">
-                    <label for="show">Показать</label>
-                    <input type="submit" name="show" value="show" id="show" >
-                </fieldset>
-            </form>
+                    <label for="basket">Корзина</label>
+                </fieldset>   
+                <input class="btn-filter" type="submit" value="Показать">    
+            </form>    
         </div>
-
+        
+            
+        
         <section class="gallery-maket">
             <h2 class="visually-hidden">Галерея шаблонов</h2>
             <h3 class="visually-hidden">Сортировка по</h3>
@@ -81,89 +80,97 @@
                     <a href="#">вверх</a>
                 </li>
             </ul>
-            <article class="template">
-                <h1 class="visually-hidden">Sedona</h1>
-                <img src="img/img-sedona-jpg.png"
-                srcset="img/img-sedona-jpg@2x.png 2x,
-                img/img-sedona-jpg@3x.png 3x"
-                class="img-sedonajpg">
-                <div class="template-text">
-                    <p class="template-name">Sedona</p>
-                    <p class="template-info">Информационный сайт для туристов</p>
-                    <a href="basket.html" class="buy-template">9 900 РУБ.</a>
-                </div>
-            </article>
-
-            <article class="pink">
-                <h1 class="visually-hidden">Пинк</h1>
-                <img src="img/img-pink-jpg.jpg"
-                srcset="img/img-pink-jpg@2x.jpg 2x,
-                img/img-pink-jpg@3x.jpg 3x"
-                class="img-pinkjpg">
-                <div class="template-text">
-                    <p class="template-name">Pink app</p>
-                    <p class="template-info">Продуктовый лендинг приложения для IOS и Android</p>
-                    <a href="basket.html" class="buy-template">9 900 РУБ.</a>
-                </div>
-            </article>
-
-            <article class="borodinski">
-                <h1 class=visually-hidden>Бородинский</h1>  
-                <img src="img/img-barbershop-jpg.png"
-                srcset="img/img-barbershop-jpg@2x.png 2x,
-                img/img-barbershop-jpg@3x.png 3x"
-                class="img-barbershopjpg">
-                <div class="template-text">
-                    <p class="template-name">Barbershop</p>
-                    <p class="template-info">Сайт салона красоты. Для мужчин, да</p>
-                    <a href="basket.html" class="buy-template">9 900 РУБ.</a>
-                </div>
-            </article>
-
-            <article class="mishka">
-                <h1 class="visually-hidden">Мишка</h1> 
-                <img src="img/img-mishka-jpg.jpg"
-                srcset="img/img-mishka-jpg@2x.jpg 2x,
-                img/img-mishka-jpg@3x.jpg 3x"
-                class="img-mishkajpg">
-                <div class="template-text">
-                    <p class="template-name">Mishka</p>
-                    <p class="template-info">Интернет-магазин вязанных игрушек</p>
-                    <a href="basket.html" class="buy-template">9 900 РУБ.</a>
-                </div>
-            </article>
-
-            <article class="aplus">
-                <h1 class="visually-hidden">А плюс</h1>
-                <img src="img/img-aplus-jpg.png"
-                srcset="img/img-aplus-jpg@2x.png 2x,
-                img/img-aplus-jpg@3x.png 3x"
-                class="img-aplusjpg">
-                <div class="template-text">
-                    <p class="template-name">A Plus</p>
-                    <p class="template-info">Лендинг курсов повышения квалификации</p>
-                    <a href="basket.html" class="buy-template">9 900 РУБ.</a>
-                </div>
-            </article>
-
-            <article class="kvast">
-                <h1 class="visually-hidden">Кваст</h1> 
-                <img src="img/img-kvast-jpg.png"
-                srcset="img/img-kvast-jpg@2x.png 2x,
-                img/img-kvast-jpg@3x.png 3x"
-                class="img-kvastjpg">
-                <div class="template-text">
-                    <p class="template-name">Кваст</p>
-                    <p class="template-info">Промо-сайт производителя крафтового кваса</p>
-                    <a href="basket.html" class="buy-template">9 900 РУБ.</a>
-                </div>
-            </article>
-        
-        <div>
-            <a>1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Следующая</a>
+            <ul class="templates-list">
+                <li class="template-item">
+                    <article class="catalog-item">
+                        <h1 class="visually-hidden">Sedona</h1>
+                        <img src="img/img-sedona-jpg.png"
+                        srcset="img/img-sedona-jpg@2x.png 2x,
+                        img/img-sedona-jpg@3x.png 3x"
+                        class="img-sedonajpg">
+                        <div class="template-text">
+                            <p class="template-name">Sedona</p>
+                            <p class="template-info">Информационный сайт для туристов</p>
+                            <a href="basket.html" class="buy-template">9 900 РУБ.</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="template-item"> 
+                    <article class="catalog-item">
+                        <h1 class="visually-hidden">Пинк</h1>
+                        <img src="img/img-pink-jpg.jpg"
+                        srcset="img/img-pink-jpg@2x.jpg 2x,
+                        img/img-pink-jpg@3x.jpg 3x"
+                        class="img-pinkjpg">
+                        <div class="template-text">
+                            <p class="template-name">Pink app</p>
+                            <p class="template-info">Продуктовый лендинг приложения для IOS и Android</p>
+                            <a href="basket.html" class="buy-template">9 900 РУБ.</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="template-item">
+                    <article class="catalog-item">
+                        <h1 class=visually-hidden>Бородинский</h1>  
+                        <img src="img/img-barbershop-jpg.png"
+                        srcset="img/img-barbershop-jpg@2x.png 2x,
+                        img/img-barbershop-jpg@3x.png 3x"
+                        class="img-barbershopjpg">
+                        <div class="template-text">
+                            <p class="template-name">Barbershop</p>
+                            <p class="template-info">Сайт салона красоты. Для мужчин, да</p>
+                            <a href="basket.html" class="buy-template">9 900 РУБ.</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="template-item">
+                    <article class="catalog-item">
+                        <h1 class="visually-hidden">Мишка</h1> 
+                        <img src="img/img-mishka-jpg.jpg"
+                        srcset="img/img-mishka-jpg@2x.jpg 2x,
+                        img/img-mishka-jpg@3x.jpg 3x"
+                        class="img-mishkajpg">
+                        <div class="template-text">
+                            <p class="template-name">Mishka</p>
+                            <p class="template-info">Интернет-магазин вязанных игрушек</p>
+                            <a href="basket.html" class="buy-template">9 900 РУБ.</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="template-item">
+                    <article class="catalog-item">
+                        <h1 class="visually-hidden">А плюс</h1>
+                        <img src="img/img-aplus-jpg.png"
+                        srcset="img/img-aplus-jpg@2x.png 2x,
+                        img/img-aplus-jpg@3x.png 3x"
+                        class="img-aplusjpg">
+                        <div class="template-text">
+                            <p class="template-name">A Plus</p>
+                            <p class="template-info">Лендинг курсов повышения квалификации</p>
+                            <a href="basket.html" class="buy-template">9 900 РУБ.</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="template-item">
+                    <article class="catalog-item">
+                        <h1 class="visually-hidden">Кваст</h1> 
+                        <img src="img/img-kvast-jpg.png"
+                        srcset="img/img-kvast-jpg@2x.png 2x,
+                        img/img-kvast-jpg@3x.png 3x"
+                        class="img-kvastjpg">
+                        <div class="template-text">
+                            <p class="template-name">Кваст</p>
+                            <p class="template-info">Промо-сайт производителя крафтового кваса</p>
+                            <a href="basket.html" class="buy-template">9 900 РУБ.</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        <div class="paginator">
+            <a class="btn-catolog current">1</a>
+            <a class="btn-catolog" href="#">2</a>
+            <a class="btn-catolog" href="#">3</a>
+            <a class="btn-catolog" href="#">Следующая</a>
         </div>
         </section>
         
@@ -179,20 +186,21 @@
                 ул.Б.Конюшенная, д19/8</p>
                 <span>тел.<a href="tel:+78122757575">+7(812)275-75-75</a></span>
             
-                <a href="#">>Напишите нам</a>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                    <fieldset>
-                    <h4 class="feedback">Напишите нам</h4>
-                    <label for="user-name">Ваше имя:</label>
-                    <input type="text" name="user-name" value="user-name" id="user-name" placeholder="Имя Фамилия">
-                    <label for="email">Ваше имя:</label>
-                    <input type="email" name="email" value="email" id="email" placeholder="email@example.com">
-                    <label for="text-letter">Текст письма:</label>
-                    <textarea name="text-letter" id="text-letter"  rows="5" placeholder="В свободной форме"></textarea>
-                    
-                    <input type="submit" name="send" value="send" id="send">
-                    <button class="close" type="button">Закрыть</button>
-                </form>
+                <a href="#">Напишите нам</a>
+            </section>
+            <section class="write-us">
+                <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                <h4 class="feedback">Напишите нам</h4>
+                <label for="user-name">Ваше имя:</label>
+                <input type="text" name="user-name" value="user-name" id="user-name" placeholder="Имя Фамилия">
+                <label for="email">Ваше имя:</label>
+                <input type="email" name="email" value="email" id="email" placeholder="email@example.com">
+                <label for="text-letter">Текст письма:</label>
+                <textarea name="text-letter" id="text-letter"  rows="5" placeholder="В свободной форме"></textarea>
+                
+                <button class="send"  type="submit" name="send" value="send">Отправить</button>
+                <span class="close"></span>
             </section>
         </section>
     </main>
@@ -200,11 +208,11 @@
     <footer>
         <section class="social-network">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <ul>
-                <li><a href="https://www.vk.com"></a></li>
-                <li><a href="https://www.facebook.com"></a></li>
-                <li><a href="https://www.instagram.com"></a></li>
-            </ul>
+            <ul class="social-list">
+                <li><a class="social-link social-vk" href="https://www.vk.com"></a></li>
+                <li><a class="social-link social-fb" href="https://www.facebook.com"></a></li>
+                <li><a class="social-link social-in"href="https://www.instagram.com"></a></li>
+              </ul>
         </section>
         <section>
             <h2 class="visually-hidden">Давайте дружить</h2>
