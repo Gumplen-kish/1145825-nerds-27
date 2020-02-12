@@ -62,11 +62,21 @@ body {
     background-color: #eeeeee;
     font-size: 16px;
     text-transform: uppercase;
+    width: 1200px;
+    margin: 0 auto;
 }
 .site-nav-link {
     display: block;
     padding: 12px 0;
     position: relative;
+}
+.site-nav-link-active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fb565a;
 }
 .logo:hover {
     opacity: 0.8;
@@ -97,18 +107,11 @@ body {
     text-transform: uppercase;
     text-decoration: none
 }
-.basket:hover {
-    color: #fb565a;
-}
-.basket:active {
-    color: rgba(0, 0, 0, 0.3);
-}
 .basket::before {
     content: "";
     position:absolute;
     width: 15px;
     height: 15px;
-    display: block;
     background-image: url("../img/svg-nerds/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -116,6 +119,13 @@ body {
     left: -15px;
     transform: translateY(-50%);
 }
+.basket:hover {
+    color: #fb565a;
+}
+.basket:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 
 
 
@@ -134,6 +144,18 @@ body {
     line-height: 1.13;
     text-align: center;
     color: #ffffff;
+    line-height: 1.13;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+    display: inline-block;
+    padding-top: 13px;
+    padding-right: 40px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    vertical-align: middle;
+    border-style: none;
 }
 .learn-more:hover {
     background-color: #e74246; 
@@ -144,35 +166,66 @@ body {
 }
 
 /*Наш сервис*/
-.service{
+.our-services{
+    border-bottom: 2px solid #eeeeee;
+}
+.service-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 80px; 
+}
+.service {
     position: relative;
+    width: 300px;
+    margin-top: 165px;
 }
 .service::before {
     content: "";
     position:absolute;
     width: 300px;
-    height: 146px;
+    height: 145px;
     display: block;
-    /*background-color: red;*/
+    top: -145px;
+    background-color:#eeeeee;
 }
-.service-web::before {
+.service:nth-of-type(3n+2),
+.service:nth-of-type(3n+3) {
+    margin-left: 100px;
+}
+
+.service-web:nth-of-type(1)::before {
     background-image: url("../img/illustration-1.jpg");
     background-repeat: no-repeat; 
+    background-color: #fb565a;
+    background-position: center;
 }
-.service-applications {
+.service-applications:nth-of-type(2)::before {
     background-image: url("../img/illustration-2.jpg");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-color: #00ca74; 
+    background-position: center;
 }
-.service-presentations {
+.service-presentations:nth-of-type(3)::before {
     background-image: url("../img/illustration-3.jpg");
     background-repeat: no-repeat; 
+    background-color: #efc849;
+    background-position: center;
+
 }
 .service-title {
     font-size: 24px;
     line-height: 1.25;
-    color: black
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .service-desk {
+    padding-bottom: 35px;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -180,66 +233,156 @@ body {
 .order {
     width: 160px;
     height: 50px;
-}
-.order-web a {
-    background-color: #fb565a;
+    line-height: 1.13;
     color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+    padding-top: 19px;
+    padding-right: 39px;
+    padding-bottom: 18px;
+    padding-left: 39px;
+    vertical-align: middle;
 }
-.order-web a:hover {
+.order-web {
+    background-color: #fb565a;
+}
+.order-web:hover {
     background-color:#e74246;
     
 }
-.order-web a:active {
+.order-web:active {
     background-color: #d7373b;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     color: rgba(255, 255, 255, 0.3);
     
 }
-.order-applications a {
+.order-applications {
     background-color:#00ca74;
     color: #ffffff;
 }
-.order-applications a:hover {
+.order-applications:hover {
     background-color:#00bc6c;
     
 }
-.order-applications a:active {
+.order-applications:active {
     background-color:#00aa62;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     color: rgba(255, 255, 255, 0.3);
     
 }
-.order-presentations a {
+.order-presentations {
     background-color:#efc84a;
     color: #ffffff;
 }
-.order-presentations a:hover {
+.order-presentations:hover {
     background-color:#eab534;
     
 }
-.order-presentations a:active {
+.order-presentations:active {
     background-color:#e5a722;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     color: rgba(255, 255, 255, 0.3);
     
 }
 /*Наши преимущества*/
-.we-first {
-    font-size: 45px;
-    line-height: 1;
+.about-company {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid #eeeeee;
 }
-.we-second {
-    font-size: 16px;
-    line-height: 1.5;
+.about-company-text {
+    display: block;
+    width: 650px;
+    padding-left: 141px;
+}
+.about-company strong {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1;
+    color: #000000;
 }
 .title-list {
-    font-size: 16px;
-    text-transform: uppercase;
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 25px;
     font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.list-service {
+    margin: 0;
+    padding: 0px;
+    line-height: 48px;
+    list-style: none;
 }
 .list-service li {
-    font-size: 16px;
+    position: relative;
+    padding-left: 0px;
 }
+.list-service li::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 50;
+    height: 2px;
+    width: 25px;
+    background-color: #fb565a;
+}
+
+.indicators {
+    display: block;
+    width: 360px;
+    margin-left: auto;
+    text-align: center;
+    padding-right: 140px;
+}
+.indicators-caption {
+    display: block;
+    padding-top: 40px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+.indicators-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.indicators-item {
+    width: 105px;
+    text-align: left;
+}
+.indicators-item p {
+    vertical-align: baseline;
+}
+.indicators-value {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: #000000;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 0.22;
+}
+.indicators-value sup{
+    vertical-align: bottom;
+}
+
+
 
 /*Наши партнёры*/
 .our-partners {
@@ -424,7 +567,7 @@ body {
 /*Стилизуем инфо блог к шаблонам*/
 .template-text {
     background-color: #eeeeee;
-    display: ;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -504,35 +647,72 @@ body {
 
 
 /*Стилизуем подвал*/
+.social-network {
+    display: flex;
+    align-items: center;
+    min-height: 217px;
+}
 .main-footer {
     width: 1440px;
     height: 217px;
     background-color: white;
 }
 .friend {
+    padding-left: 130px;
+}
+.footer-text {
+    margin-right: auto;
+    margin-left: 139px;
+    padding: 0;
+}
+.footer-text p {
+    display: block;
+    margin: 0;
+    color: #444444;
+    line-height: 22px;
+}
+.footer-text strong {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.friend strong {
+    display: block;
+    padding-bottom: 12px;
     font-size: 36px;
     line-height: 1px;
     font-weight: bold;
+    color: #000000;
 }
 .discount {
     font-size: 16px;
     line-height: 1.38px;
 }
 .social-list {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
-    width: 79px;
-    height: 79px; 
+    width: 257px;
+    margin: 0;
+    padding-left: 0;
 }
 .social-link {
     position: relative;
+    margin-right: 80px;
+    padding-right: 10px;
 }
+/*делаем активности соц.сетей*/
 .social-link::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     content: "";
     position:relative;
     width: 79px;
     height: 79px;
     display: block;
+    transform: translateY(50%);
     background-color:#e1e1e1;
     background-repeat: no-repeat;
     background-position: center;
@@ -546,4 +726,11 @@ body {
 }
 .social-in::before {
     background-image:  url("../img/svg-nerds/insta-icon.svg");
+}
+.social-link:hover::before {
+    background-color: #e74246;
+}
+.social-link:active::before {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
 }
