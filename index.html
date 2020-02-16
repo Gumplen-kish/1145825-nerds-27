@@ -19,40 +19,42 @@
           <li class="site-nav-item"><a class="site-nav-link" href="shop.html" >Магазин</a></li>
           <li class="site-nav-item"><a class="site-nav-link" href="contacts.html">Контакты</a></li>
       </ul>
+      <a class="basket" href="basket.html">Корзина</a>
     </nav> 
-  <a class="basket" href="basket.html">Корзина</a>
   </header>
   <main>
     <h1 class="visually-hidden">Дизайн студия Nerds</h1>
-    <section>
+    <section class="slide">
       <h2 class="visually-hidden">Наши особенности</h2>
-        <div>
-            <b class="big-word">Долго, дорого, скрупулезно.</b>
-            <p class="small-word">Математически выверенный дизайн 
-            для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="learn-more">Узнать больше</a>
-        </div>
+        <div class="slide-list">
+          <div class="slide-item:active slide1">
+              <b class="big-word">Долго, дорого, скрупулезно.</b>
+              <p class="small-word">Математически выверенный дизайн 
+              для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+          </div>
 
-        <div>
-            <b class="big-word">Любим математику как никто другой</b>
-            <p class="small-word">Никакого креатива, только математические формулы 
-            для расчета идеальных пропорций.</p>
-            <a href="#" class="learn-more">Узнать больше</a>
-        </div>
+          <div class="slide2 slide-item">
+              <b class="big-word">Любим математику как никто другой</b>
+              <p class="small-word">Никакого креатива, только математические формулы 
+              для расчета идеальных пропорций.</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+          </div>
 
-        <div>
-            <b class="big-word">Только ночь, только хардкор</b>
-            <p class="small-word">Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="learn-more">Узнать больше</a>
-        </div>
-        <div class=slider-btn>
-          <input type="radio" id="1" name="slider1" class="switch" checked>
-          <label for="1" class="slider-switch-label"></label>
-          <input type="radio" id="2" name="slider2" class="switch">
-          <label for="2" class="slider-switch-label"></label>
-          <input type="radio" id="3" name="slider3" class="switch">
-          <label for="3" class="slider-switch-label"></label>
+          <div class="slide3 slide-item">
+              <b class="big-word">Только ночь, только хардкор</b>
+              <p class="small-word">Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+          </div>
+          <div class=slide-btn>
+            <input type="radio" id="1" name="slider1" class="switch" checked>
+            <label for="1" class="slider-switch-label"></label>
+            <input type="radio" id="2" name="slider2" class="switch">
+            <label for="2" class="slider-switch-label"></label>
+            <input type="radio" id="3" name="slider3" class="switch">
+            <label for="3" class="slider-switch-label"></label>
+          </div>
         </div>
      </section>
 
@@ -166,18 +168,21 @@
         <a href="#">Напишите нам</a>
       </section>
       <section class="write-us">
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="write-us-form hidden" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-          <h4 class="feedback">Напишите нам</h4>
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="user-name" value="user-name" id="user-name" placeholder="Имя Фамилия">
-          <label for="email">Ваше имя:</label>
-          <input type="email" name="email" value="email" id="email" placeholder="email@example.com">
-          <label for="text-letter">Текст письма:</label>
-          <textarea name="text-letter" id="text-letter"  rows="5" placeholder="В свободной форме"></textarea>
-         
-          <button class="send"  type="submit" name="send" value="send">Отправить</button>
-          <span class="close"></span>
+            <h4 class="feedback">Напишите нам</h4>
+            <div class="feedback-column">
+              <p><label class="feedback-label" for="user-name">Ваше имя:</label>
+              <input class="feedback-input-text" type="text" name="user-name" value="user-name" id="user-name" placeholder="Имя Фамилия"></p>
+              <p><label class="feedback-label" for="email">Ваше имя:</label>
+              <input class="feedback-input-email" type="email" name="email" value="email" id="email" placeholder="email@example.com"></p>
+            </div>
+            <p><label class="feedback-label" for="text-letter">Текст письма:</label></p>
+            <textarea class="feedback-textarea" name="text-letter" id="text-letter"  rows="5" placeholder="В свободной форме"></textarea>
+          
+            <button class="send"  type="submit" name="send" value="send">Отправить</button>
+            <span class="close"></span>
+          </fieldset>
         </form>
       </section>
     </section>
@@ -191,11 +196,11 @@
           <li><a class="social-link social-fb" href="https://www.facebook.com"></a></li>
           <li><a class="social-link social-in"href="https://www.instagram.com"></a></li>
         </ul>
-      </section>
-      <section class="footer-text">
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <p class="friend"><strong>Давайте дружить, это выгодно!</strong>
-        Скидка 10% для друзей из социальных сетей</p>
+        <section class="footer-text">
+          <h2 class="visually-hidden">Давайте дружить</h2>
+          <p class="friend"><strong>Давайте дружить, это выгодно!</strong>
+          Скидка 10% для друзей из социальных сетей</p>
+        </section>
       </section>
     </footer>
 </body>

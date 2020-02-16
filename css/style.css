@@ -78,6 +78,11 @@ body {
     height: 2px;
     background-color: #fb565a;
 }
+.logo {
+    position: absolute;
+    top: 50px;
+    left:140px;
+}
 .logo:hover {
     opacity: 0.8;
 }
@@ -125,8 +130,86 @@ body {
 .basket:active {
     color: rgba(0, 0, 0, 0.3);
 }
-
-
+/*стилизуем слайды*/
+.slide {
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+.slide-list {
+    display: flex;
+    margin: 0;
+    padding: 0; 
+}
+.slide-item {
+    display:none;
+    box-sizing: border-box;
+    width: 1440px;
+    height: 698px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+.slide-item:active {
+    display: block;
+}
+.slide1 {
+    background-image: url("../img/slide1-picture.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    box-sizing: border-box;
+}
+.slide2 {
+    background-image: url("../img/slide2-picture.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.slide3 {
+    background-image: url("../img/slide3-picture.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+/*закрываем старые радиокнопки*/
+.slide input[type="radio"] {
+    display: none;
+  }
+.slide-btn {
+    position: absolute;
+    bottom: 80px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.slider-switch-label {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 8px;
+    margin-bottom: 0;
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.switch:checked+.slider-switch-label::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 8px;
+    height: 8px;
+    box-sizing: border-box;
+    border: 3px solid #eeeeee;
+    border-radius: 50%;
+    transform: translateX(50%) translateY(50%);
+}
 
 
 /*Стилизуем особенности*/
@@ -141,7 +224,6 @@ body {
 .learn-more {
     background-color:#fb565a;
     font-size: 16px;
-    line-height: 1.13;
     text-align: center;
     color: #ffffff;
     line-height: 1.13;
@@ -183,6 +265,21 @@ body {
     position: relative;
     width: 300px;
     margin-top: 165px;
+    padding-top: -145px;
+}
+
+.service-title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.service-desk {
+    padding-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
 }
 .service::before {
     content: "";
@@ -190,7 +287,7 @@ body {
     width: 300px;
     height: 145px;
     display: block;
-    top: -145px;
+    top: 0px;
     background-color:#eeeeee;
 }
 .service:nth-of-type(3n+2),
@@ -216,18 +313,6 @@ body {
     background-color: #efc849;
     background-position: center;
 
-}
-.service-title {
-    font-size: 24px;
-    line-height: 1.25;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.service-desk {
-    padding-bottom: 35px;
-    font-size: 16px;
-    line-height: 1.5;
 }
 /*Кнопки заказать в разных активностях*/
 .order {
@@ -429,44 +514,75 @@ body {
 
 
 /*Стилизуем форму обратной связи*/
+.write-us-form {
+    position: relative;
+    width: 960px;
+    height: 590px;
+}
 .feedback {
+    display: block;
     width: 306px;
     height: 33px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
-.write-us-form label {
-    line-height: 18px;
+.feedback-column {
+    display: flex;
+}
+.feedback-label {
+    display: block;
+    padding-bottom: 12px;
+    line-height: 1.13;
     font-weight: 700;
+    color: #000000;
 }
-  
-.write-us-form input,
-.write-us-form textarea {
+.feedback-input-text,
+.feedback-input-email {
     font: inherit;
-    font-weight: normal;
+    width: 360px;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    vertical-align: middle;
     color: rgba(68, 68, 68, 0.5);
-    border: 2px solid #d7dcde;
+    border: solid 2px #d7dcde;
+}
+.feedback-input-text {
+    margin-right: 40px;
+}
+.feedback-textarea {
+    resize: none;
+    width: 760px;
+    height: 118px;
+    margin-bottom: 47px;
+    box-sizing: border-box;
+    border: solid 2px #d7dcde;
 }
   
-.write-us-form input:hover,
-.write-us-form textarea:hover {
+.feedback-input-text:hover,
+.feedback-input-email:hover,
+.feedback-textarea:hover {
     border-color: #b4b9bb;
 }
   
-.write-us-form input:focus,
-.write-us-form textarea:focus {
+.feedback-input-text:focus,
+.feedback-input-email:focus,
+.feedback-textarea:focus {
     outline: 0;
     color: #444444;
     border-color: #000000;
 }
   
-.write-us-form input:invalid,
-.write-us-form textarea:invalid {
+.feedback-input-text:invalid,
+.feedback-input-email:invalid,
+.feedback-textarea:invalid {
     color: #e74246;
     border-color: #e74246;
 }
 .send {
+    margin-left: 100px;
+    margin-bottom: 85px;
     width: 260px;
     height: 50px;
     color: white;
@@ -475,11 +591,16 @@ body {
     text-transform: uppercase;
     border: none;
 }
-.close {
+
+.close  {
     position: absolute;
     width: 21px;
     height: 21px;
     opacity: 0.3;
+    top: 76px;
+    right: 90px;
+    text-align: center;
+    vertical-align: middle;
 }
 .close::before,
 .close::after {
@@ -490,6 +611,7 @@ body {
     width: 21px;
     width: 2px;
     background-color:red;
+    transform: translateX(849px), translateY(491px);
 }
 .close::before {
     transform: rotate(45deg);
@@ -505,13 +627,106 @@ body {
 }
 
 /*Стилизуем радиокнопки и чекбоксы*/
+.filter-range {
+    background-color: #eeeeee;
+}
+.filter-form-list {
+    display: flex;
+    margin-top: 13px;
+    margin-right: 0;
+    margin-bottom: 62px;
+    margin-left: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+  
+.filter-form-value {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    background-color: #eeeeee;
+    border-style: none;
+}
+  
+.filter-form-caption {
+    margin-right: 12px;
+    text-transform: uppercase;
+}
+.filter-grid-input,
+.filter-features-input {
+    display: none;
+}
+.filter-grid-input + .filter-grid-label,
+.filter-features-input + .filter-features-label {
+    position: relative;
+    margin-left: 35px;
+}
+.filter-grid-input + .filter-grid-label::before,
+.filter-features-input + .filter-features-label::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -35px;
+    background-color: #ffffff;
+    opacity: 0.4;
+}
+.filter-grid-input:checked + .filter-grid-label::before {
+    background-image: url("../img/svg-nerds/radio-on.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+.filter-grid-input + .filter-grid-label::before {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/svg-nerds/radio-off.svg");
+    background-repeat: no-repeat;
+}
+.filter-grid-label:hover::before,
+.filter-grid-input:checked + .filter-grid-label:hover::before {
+    opacity: 1;
+}
+.filter-features-input + .filter-features-label::before {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/svg-nerds/checkbox-off.svg");
+    background-repeat: no-repeat;
+}
+.filter-features-input:checked + .filter-features-label::before {
+    background-image: url("../img/svg-nerds/checkbox-on.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4; 
+}
+
+
+.filter-cost {
+    display: flex;
+}
+.filter-cost,
+.filter-grid,
+.filter-features {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.filter-features-list,
+.filter-grid-list,
+.sortr-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.filter-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+    color: #000000; 
+}
 .grid {
     width: 260px;
-    margin-right: 140px;
-    border: none;
-}
-.filter-option fieldset {
-    border: none;
+    margin-right: 140px;    
 }
 .btn-filter {
     width: 260px;
@@ -524,6 +739,62 @@ body {
     color: #000000;
     text-transform: uppercase;
 }
+
+/*Стилизуем блог Сортировки*/
+.gallery-maket {
+    box-sizing: border-box;
+    width: 800px;
+    margin-left: auto;
+    padding: 20px;
+}
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase
+}
+.sort form {
+    display: flex;
+    width: 360px;
+}
+.sort-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+} 
+.sort-link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.3;
+}
+/*Задаем ссылкам стрелочки*/
+.down-arrow::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/svg-nerds/icon-down-dir.svg");
+    background-repeat: no-repeat; 
+}
+.up-arrow::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/svg-nerds/icon-up-dir.svg");
+    background-repeat: no-repeat; 
+}
+/*Задаем ссылкам активности*/
+.sort-link:hover {
+    opacity: 0.6
+}
+.sort-link:active {
+    opacity: 1;
+}
+
 /*Стилизуем каталог*/
 /*Говорим каталогу, что он флекс*/
 .templates-list {
@@ -566,6 +837,8 @@ body {
 }
 /*Стилизуем инфо блог к шаблонам*/
 .template-text {
+    position: absolute;
+    bottom: 8px;
     background-color: #eeeeee;
     display: none;
     flex-direction: column;
@@ -579,6 +852,10 @@ body {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 40px;
+}
+
+.catalog-item:hover .template-text {
+    display: block;
 }
 .template-name {
     margin: 0;
@@ -663,7 +940,7 @@ body {
 .footer-text {
     margin-right: auto;
     margin-left: 139px;
-    padding: 0;
+    padding-left:0px; 
 }
 .footer-text p {
     display: block;
@@ -690,12 +967,14 @@ body {
 }
 .social-list {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: 0;
     list-style: none;
-    width: 257px;
-    margin: 0;
-    padding-left: 0;
 }
 .social-link {
     position: relative;
