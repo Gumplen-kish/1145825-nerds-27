@@ -25,40 +25,41 @@
     </div>
   </header>
   <main>
-    <h1 class="visually-hidden">Дизайн студия Nerds</h1>
-    <section class="slide">
-      <h2 class="visually-hidden">Наши особенности</h2>
-        <div class="slide-list">
-          <div class="slide-item active slide1">
-              <b class="big-word">Долго, дорого, скрупулезно.</b>
-              <p class="small-word">Математически выверенный дизайн 
-              для вашего сайта или мобильного приложения.</p>
-              <a href="#" class="learn-more">Узнать больше</a>
-          </div>
-
-          <div class="slide2 slide-item">
-              <b class="big-word">Любим математику как никто другой</b>
-              <p class="small-word">Никакого креатива, только математические формулы 
-              для расчета идеальных пропорций.</p>
-              <a href="#" class="learn-more">Узнать больше</a>
-          </div>
-
-          <div class="slide3 slide-item">
-              <b class="big-word">Только ночь, только хардкор</b>
-              <p class="small-word">Работать днем, как все? Мы против этого.
-              Ближе к полуночи работа только начинается.</p>
-              <a href="#" class="learn-more">Узнать больше</a>
-          </div>
-          <div class=slide-btn>
-            <input type="radio" id="btn-1" name="slider1" class="switch" checked>
-            <label for="btn-1" class="slider-switch-label"></label>
-            <input type="radio" id="btn-2" name="slider3" class="switch">
-            <label for="btn-2" class="slider-switch-label"></label>
-            <input type="radio" id="btn-3" name="slider2" class="switch">
-            <label for="btn-3" class="slider-switch-label"></label>
-          </div>
-        </div>
-     </section>
+    <h1 class="visually-hidden">Сайт компании «nerds»</h1>
+    <section class="slider">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="slider-list">
+        <li class="slider-item slider-item-active">
+          <h3 class="slider-item-title">Долго, дорого,<br>скрупулезно.</h3>
+          <p>
+          Математически выверенный дизайн<br>для вашего сайта или мобильного приложения
+          </p>
+          <a href="#" class="button">Узнать больше</a>
+        </li>
+        <li class="slider-item">
+          <h3 class="slider-item-title">Любим математику как никто другой</h3>
+          <p>
+          Никакого креатива, только математические формулы<br>для расчета идеальных пропорций
+          </p>
+          <a href="#" class="button">Узнать больше</a>
+        </li>
+        <li class="slider-item">
+          <h3 class="slider-item-title">Только ночь,<br>только хардкор</h3>
+          <p>
+          Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается
+          </p>
+          <a href="#" class="button">Узнать больше</a>
+        </li>
+      </ul>
+      <div class="slider-controls">
+        <input type="radio" id="btn-1" name="toggle" class="slider-toogle" checked>
+        <label for="btn-1" class="slider-toogle-label"></label>
+        <input type="radio" id="btn-2" class="slider-toogle" name="toggle">
+        <label for="btn-2" class="slider-toogle-label"></label>
+        <input type="radio" id="btn-3" class="slider-toogle" name="toggle">
+        <label for="btn-3" class="slider-toogle-label"></label>
+      </div>
+    </section>
 
     <section class="our-services">
       <h2 class="visually-hidden">Наши услуги</h2>
@@ -84,13 +85,14 @@
       </ul>
     </section>
     
-    <section class="about-company">
+    <section class="about-company container">
       <h2 class="visually-hidden">Наши услуги и преимущества</h2> 
+    
       <div class="about-company-text" >
-        <p><strong>Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong>
+        <p class="about-company-p"><strong class="about-company-strong">Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong>
         Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
-        превыше креатива. Работаем не покладая рук, как роботы.
-        <b class="title-list">Выполняем заказы на разработку:</b></p>
+        превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <b class="title-list">Выполняем заказы на разработку:</b>
         <ul class="list-service">
           <li>Веб-сайтов любой сложности.</li>
           <li>Мобильных приложений для IOS и Android</li>
@@ -157,17 +159,22 @@
   </section>
 
     <section class="map">
-      <h2 class="visually-hidden">Наше местоположение</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580060706142!5m2!1sru!2sru"></iframe>
-      <section class="adress">
-        <h3 class="visually-hidden">Наш адрес</h3>
-        <p><b class="map-title">nerds disign studio</b></p>
-  
-        <p class="map-text">191186, Санкт-Петербург, <br>
-        ул.Б.Конюшенная, д19/8</p>
-        <span class="map-phone">тел.<a class="map-phone-link" href="tel:+78122757575">+7(812)275-75-75</a></span>
-  
-        <button type="button" class="btn-contact">Напишите нам</button>
+      <div class="container">
+        <div class="container-map">
+          <h2 class="visually-hidden">Наше местоположение</h2>
+          <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580060706142!5m2!1sru!2sru"></iframe>
+          <img class="map-marker" src="img/map-marker.png" alt="Маркер местоположения компании Nerds">
+        </div>
+        <section class="adress">
+          <h3 class="visually-hidden">Наш адрес</h3>
+          <p><b class="map-title">nёrds disign studio</b></p>
+    
+          <p class="map-text">191186, Санкт-Петербург, <br>
+          ул.Б.Конюшенная, д19/8</p>
+          <span class="map-text">тел.<a class="map-phone-link" href="tel:+78122757575">+7(812)275-75-75</a></span>
+    
+          <button type="button" class="btn-contact">Напишите нам</button>
+      </div>
       </section>
       <section class="write-us">
         <form class="write-us-form hidden" action="https://echo.htmlacademy.ru" method="post">
@@ -190,7 +197,7 @@
     </section>
   </main>
     
-  <footer class="main-footer">
+  <footer class="page-footer container">
       <section class="social-network">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-list">
@@ -198,11 +205,11 @@
           <li><a class="social-link social-fb" href="https://www.facebook.com"></a></li>
           <li><a class="social-link social-in"href="https://www.instagram.com"></a></li>
         </ul>
-        <section class="footer-text">
+      </section>
+      <section class="footer-text">
           <h2 class="visually-hidden">Давайте дружить</h2>
           <p class="friend"><strong>Давайте дружить, это выгодно!</strong>
           Скидка 10% для друзей из социальных сетей</p>
-        </section>
       </section>
     </footer>
 </body>
