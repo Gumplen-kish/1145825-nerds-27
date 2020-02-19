@@ -9,25 +9,27 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="logo">
-      <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип компании Нёрдс">
-    </a>
-    <nav class="main-nav">
-      <ul class="site-nav">
-          <li class="site-nav-item"><a class="site-nav-link" href="atelier.html">Студия</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" href="customers.html">Клиенты</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" href="shop.html" >Магазин</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" href="contacts.html">Контакты</a></li>
-      </ul>
+    <div class="container">
+      <a class="logo">
+        <img src="img/svg-nerds/nerds-logo.svg" alt="Логотип компании Нёрдс">
+      </a>
+      <nav class="main-nav">
+        <ul class="site-nav">
+            <li class="site-nav-item"><a class="site-nav-link" href="atelier.html">Студия</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="customers.html">Клиенты</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="shop.html" >Магазин</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav> 
       <a class="basket" href="basket.html">Корзина</a>
-    </nav> 
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Дизайн студия Nerds</h1>
     <section class="slide">
       <h2 class="visually-hidden">Наши особенности</h2>
         <div class="slide-list">
-          <div class="slide-item:active slide1">
+          <div class="slide-item active slide1">
               <b class="big-word">Долго, дорого, скрупулезно.</b>
               <p class="small-word">Математически выверенный дизайн 
               для вашего сайта или мобильного приложения.</p>
@@ -48,12 +50,12 @@
               <a href="#" class="learn-more">Узнать больше</a>
           </div>
           <div class=slide-btn>
-            <input type="radio" id="1" name="slider1" class="switch" checked>
-            <label for="1" class="slider-switch-label"></label>
-            <input type="radio" id="2" name="slider2" class="switch">
-            <label for="2" class="slider-switch-label"></label>
-            <input type="radio" id="3" name="slider3" class="switch">
-            <label for="3" class="slider-switch-label"></label>
+            <input type="radio" id="btn-1" name="slider1" class="switch" checked>
+            <label for="btn-1" class="slider-switch-label"></label>
+            <input type="radio" id="btn-2" name="slider3" class="switch">
+            <label for="btn-2" class="slider-switch-label"></label>
+            <input type="radio" id="btn-3" name="slider2" class="switch">
+            <label for="btn-3" class="slider-switch-label"></label>
           </div>
         </div>
      </section>
@@ -95,7 +97,7 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <h2 class="visually-hidden">Преимущества</h2>
+
       <div class="indicators">
         <img src="img/nerds-illustration.jpg" alt="Логотип компании «nerds»" width="360" height="208">
         <p><b class="indicators-caption">с 2004 года Любим точность во всем:</b></p>
@@ -159,13 +161,13 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580060706142!5m2!1sru!2sru"></iframe>
       <section class="adress">
         <h3 class="visually-hidden">Наш адрес</h3>
-        <p>nerds disign studio</p>
+        <p><b class="map-title">nerds disign studio</b></p>
   
-        <p>191186, Санкт-Петербург,
+        <p class="map-text">191186, Санкт-Петербург, <br>
         ул.Б.Конюшенная, д19/8</p>
-        <span>тел.<a href="tel:+78122757575">+7(812)275-75-75</a></span>
+        <span class="map-phone">тел.<a class="map-phone-link" href="tel:+78122757575">+7(812)275-75-75</a></span>
   
-        <a href="#">Напишите нам</a>
+        <button type="button" class="btn-contact">Напишите нам</button>
       </section>
       <section class="write-us">
         <form class="write-us-form hidden" action="https://echo.htmlacademy.ru" method="post">

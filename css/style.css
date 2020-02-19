@@ -8,13 +8,25 @@ body {
     color: black;
     background-color: #ffffff;
 }
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
 .page-header {
+    display: flex;
+    justify-content: space-around;
     background-color: #eeeeee;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 /*Скрытые заголовки*/
 .visually-hidden {
@@ -55,14 +67,12 @@ body {
 }
 .main-nav {
     display: flex;
-    padding: 50px 20px 0;
-    align-items: center;
+    padding: 0 20px;
     flex-wrap: wrap;
     box-sizing: border-box;
     background-color: #eeeeee;
     font-size: 16px;
     text-transform: uppercase;
-    width: 1200px;
     margin: 0 auto;
 }
 .site-nav-link {
@@ -79,7 +89,6 @@ body {
     background-color: #fb565a;
 }
 .logo {
-    position: absolute;
     top: 50px;
     left:140px;
 }
@@ -102,6 +111,7 @@ body {
     padding: 0 23px;
 }
 .basket {
+    display: block;
     color: black;
     position: relative;
     right: 0;
@@ -136,24 +146,25 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #eeeeee;
+    min-height: 415px;
 }
 .slide-list {
     display: flex;
     margin: 0;
     padding: 0; 
+    width: 300%;
 }
 .slide-item {
-    display:none;
+    display: none;
     box-sizing: border-box;
-    width: 1440px;
-    height: 698px;
+    min-height: 698px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
     padding-left: 20px;
     margin: 0 auto;
 }
-.slide-item:active {
+.slide-item.active {
     display: block;
 }
 .slide1 {
@@ -211,7 +222,6 @@ body {
     transform: translateX(50%) translateY(50%);
 }
 
-
 /*Стилизуем особенности*/
 .big-word {
     font-size: 55px;
@@ -255,6 +265,7 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0;
     padding-top: 60px;
     padding-right: 20px;
@@ -265,7 +276,7 @@ body {
     position: relative;
     width: 300px;
     margin-top: 165px;
-    padding-top: -145px;
+    padding-top: 145px;
 }
 
 .service-title {
@@ -289,10 +300,6 @@ body {
     display: block;
     top: 0px;
     background-color:#eeeeee;
-}
-.service:nth-of-type(3n+2),
-.service:nth-of-type(3n+3) {
-    margin-left: 100px;
 }
 
 .service-web:nth-of-type(1)::before {
@@ -375,30 +382,33 @@ body {
 .about-company {
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 40px;
+    justify-content: space-around;
+    /*padding-top: 40px;
     padding-bottom: 75px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px;*/
     border-bottom: 2px solid #eeeeee;
 }
 .about-company-text {
-    display: block;
+    display: flex;
     width: 650px;
-    padding-left: 141px;
+    /*padding-left: 141px;*/
 }
 .about-company strong {
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-around;
+    /*padding-top: 40px;
+    padding-bottom: 35px;*/
     font-size: 45px;
     font-weight: 500;
     line-height: 1;
     color: #000000;
 }
 .title-list {
-    display: block;
-    padding-top: 45px;
-    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    /*padding-top: 45px;
+    padding-bottom: 25px;*/
     font-weight: bold;
     line-height: 1.5;
     text-transform: uppercase;
@@ -424,14 +434,15 @@ body {
 }
 
 .indicators {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     width: 360px;
     margin-left: auto;
     text-align: center;
     padding-right: 140px;
 }
 .indicators-caption {
-    display: block;
+    display: flex;
     padding-top: 40px;
     color: #000000;
     font-weight: bold;
@@ -510,10 +521,63 @@ body {
 .partner-logo:active {
     opacity:0.1;
 }
+/*Cтилизуем блок карты*/
+.map {
+    display: flex;
+
+}
+.adress {
+    display: flex;
+    width: 319px;
+    min-height: 308px;
+}
+.map-title {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.67;
+    width: 192px;
+    height: 17px;
+}
+.map-text {
+    font-size: 16px;
+    font-family: inherit;
+
+}
+.map-phone {
+    
+}
+.map-phone-link {
+    text-decoration: none;
+    color: #000000;
+}
+.btn-contact {
+    width: 220px;
+    height: 50px;
+    color: white;
+    background-color: #fb565a;
+    display: inline-block;
+    padding-top: 13px;
+    padding-right: 40px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    vertical-align: middle;
+    font: inherit;
+    font-weight: 500;
+    line-height: 1.13;
+    text-align: center;
+    text-transform: uppercase;
+    border-style: none;
+    cursor: pointer;
+}
 
 
 
 /*Стилизуем форму обратной связи*/
+.write-us {
+    display: none;
+}
 .write-us-form {
     position: relative;
     width: 960px;
@@ -926,7 +990,8 @@ body {
 /*Стилизуем подвал*/
 .social-network {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    /*align-items: center;*/
     min-height: 217px;
 }
 .main-footer {
@@ -938,9 +1003,11 @@ body {
     padding-left: 130px;
 }
 .footer-text {
-    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    /*margin-right: auto;
     margin-left: 139px;
-    padding-left:0px; 
+    padding-left:0px; */
 }
 .footer-text p {
     display: block;
@@ -1013,3 +1080,4 @@ body {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
 }
+
