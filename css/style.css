@@ -55,16 +55,19 @@ body {
 
 
 /*Стилизуем ссылки в nav*/
-.site-nav a {
+.site-nav-link {
     text-decoration: none;
     color: black;
     list-style: none;
   }
-.site-nav a:hover {
+.site-nav-link:hover {
     color: #fb565a;
 }
-.site-nav a:active {
+.site-nav-link:active {
     color: rgba(0, 0, 0, 0.3);
+}
+.site-nav-link-active:hover {
+    color: black;
 }
 .main-nav {
     display: flex;
@@ -89,6 +92,7 @@ body {
     height: 2px;
     background-color: #fb565a;
 }
+
 .logo {
     top: 50px;
     left:140px;
@@ -842,6 +846,14 @@ body {
     padding: 0;
     list-style: none;
 }
+.filter-grid-item  {
+    padding-top: 15px;
+    display: flex;
+}
+.filter-features-item {
+    padding-top: 20px;
+    display: flex;
+}
 .filter-grid-input,
 .filter-features-input {
     display: none;
@@ -929,6 +941,7 @@ body {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
+    
 }
 .sort-list,
 .sort-list-arrow {
@@ -936,12 +949,12 @@ body {
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    list-style: none;
+    list-style: none; 
 }
-.sort-list-item {
+/*.sort-list-item {
     display: flex;
     justify-content: space-around
-}
+}*/
 .sort-link {
     color: #000000;
     text-decoration: none;
@@ -1060,6 +1073,7 @@ body {
     font: inherit;
     vertical-align: middle;
     border-style: none;
+    box-sizing: border-box;
 }
 /*Пагинатор*/
 .paginator {

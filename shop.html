@@ -49,57 +49,51 @@
                 <legend class="filter-title">Сетка:</legend>
                 <ul class="filter-grid-list">
                     <li class="filter-grid-item">
-                        <p>
-                            <input class="filter-grid-input-adaptive" name="view" type="radio" id="adaptive" value="adaptive" class="filter-grid-value"checked><span></span>
+                            <input  name="view" type="radio" id="adaptive" value="adaptive" class="filter-grid-value filter-grid-input"checked>
                             <label class="filter-grid-label" for="adaptive">Адаптивная</label>
-                        </p>
                     </li>  
                     <li class="filter-grid-item">
-                        <p>
-                            <input class="filter-grid-input" name="view" type="radio" id="fixed" value="fixed">
+                            <input class="filter-grid-input filter-grid-value" name="view" type="radio" id="fixed" value="fixed">
                             <label class="filter-grid-label" for="fixed">Фиксированная</label>
-                        </p>
                     </li> 
                     <li class="filter-grid-item">
-                        <p>
-                            <input class="filter-grid-input" name="view" type="radio" id="rubber" value="rubber">
+                            <input class="filter-grid-input filter-grid-value" name="view" type="radio" id="rubber" value="rubber">
                             <label class="filter-grid-label" for="rubber">Резиновая</label>
-                        </p>
                     </li> 
                 </ul>
             </fieldset>
             <fieldset class="filter-features">
                 <legend class="filter-title">Особенности:</legend>
                 <ul class="filter-features-list">
-                    <li>
-                        <p>
+                    <li class="filter-features-item">
+                        
                             <input class="filter-features-input" type="checkbox" name="sliders" value="sliders" id="sliders" checked>
                             <label class="filter-features-label" for="sliders">Слайдеры</label>
-                        </p>                        
+                                              
                     </li>
-                    <li> 
-                        <p>
+                    <li class="filter-features-item"> 
+                        
                             <input class="filter-features-input" type="checkbox" name="block-advantage" value="block-advantage" id="block-advantage">
                             <label class="filter-features-label" for="block-advantage">Блок преимуществ</label>
-                        </p>
+                    
                     </li>
-                    <li>
-                        <p>
+                    <li class="filter-features-item">
+                        
                             <input class="filter-features-input" type="checkbox" name="news" value="news" id="news" checked>
                             <label class="filter-features-label" for="news">Новости</label>
-                        </p>
+                        
                     </li>
-                    <li>
-                        <p>
+                    <li class="filter-features-item">
+                        
                             <input class="filter-features-input" type="checkbox" name="gallery" value="gallery" id="gallery">
                             <label class="filter-features-label" for="gallery">Галерея</label>
-                        </p>
+                        
                     </li>
-                    <li>
-                        <p>
+                    <li class="filter-features-item">
+                        
                             <input class="filter-features-input" type="checkbox" name="basket" value="basket" id="basket">
                             <label class="filter-features-label" for="basket">Корзина</label>
-                        </p>
+                        
                     </li>
                 </ul>
             </fieldset>   
@@ -114,27 +108,25 @@
         <h3 class="visually-hidden">Сортировка по</h3>
         <section class="sort">
             <p class="filter-title">Сортировать:</p>
-            <form class="sort" action="https://echo.htmlacademy.ru" method="post">
-                <ul class="sort-list">
-                    <li class="sort-list-item">
-                        <a class="at-price sort-link" href="#">По цене</a>
-                    </li>
-                    <li class="sort-list-item">
-                        <a class="by-type sort-link" href="#">По типу</a>
-                    </li>
-                    <li class="sort-list-item">
-                        <a class="by-name sort-link" href="#">По названию</a>
-                    </li>
-                    <ul class="sort-list-arrow">
-                        <li class="sort-list-item">
-                            <a class="down-arrow sort-link" href="#"></a>
-                        </li>
-                        <li class="sort-list-item">
-                            <a class="up-arrow sort-link" href="#"></a>
-                        </li>
-                    </ul>
-                </ul>
-            </form>
+            <ul class="sort-list">
+                <li class="sort-list-item">
+                    <a class="at-price sort-link" href="#">По цене</a>
+                </li>
+                <li class="sort-list-item">
+                    <a class="by-type sort-link" href="#">По типу</a>
+                </li>
+                <li class="sort-list-item">
+                    <a class="by-name sort-link" href="#">По названию</a>
+                </li>
+            </ul>
+            <ul class="sort-list-arrow">
+                <li class="sort-list-item">
+                    <a class="down-arrow sort-link" href="#"></a>
+                </li>
+                <li class="sort-list-item">
+                    <a class="up-arrow sort-link" href="#"></a>
+                </li>
+            </ul>
         </section>
         <ul class="templates-list">
             <li class="template-item">
