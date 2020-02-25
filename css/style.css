@@ -618,8 +618,56 @@ body {
 
 
 /*Стилизуем форму обратной связи*/
+
 .write-us {
     display: none;
+}
+.write-us-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+.write-us-show-error {
+    animation: shake 0.6s;
+}
+/*Анимация формы*/
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+/*анимация формы при ошибке*/
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
 }
 .write-us-form {
     position: relative;
@@ -628,7 +676,7 @@ body {
 }
 .feedback {
     display: block;
-    width: 306px;
+    width: 307px;
     height: 33px;
     font-size: 45px;
     line-height: 45px;
@@ -698,7 +746,6 @@ body {
     text-transform: uppercase;
     border: none;
 }
-
 .close  {
     position: absolute;
     width: 21px;
@@ -732,6 +779,7 @@ body {
 .close:active {
     opacity: 0.1;
 }
+
 
 /*страничка католога*/
 
