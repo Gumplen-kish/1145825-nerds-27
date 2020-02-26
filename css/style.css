@@ -998,10 +998,14 @@ body {
     padding: 0;
     justify-content: space-between;
     list-style: none; 
-
+}
+.sort-list {
+    width: 280px;
+    padding-left: 230px;
 }
 .sort-list-arrow {
     width: 31px;
+    padding-right: 50px;
 }
 .sort-link {
     color: #000000;
