@@ -35,7 +35,7 @@ try {
 button.addEventListener("click",function(evt) {
     popup.classList.add("write-us-show");
     if  (storage) {
-        user-name.value=storage;
+        name.value=storage;
         email.focus();
     } else {
     name.focus();
@@ -50,7 +50,7 @@ close.addEventListener("click", function (evt) {
 
 /*Отменяем отправку форму если.. */
 form.addEventListener("submit",function(evt) {
-    if (!user-name.value ||!email.value) {
+    if (!name.value ||!email.value) {
         evt.preventDefault();
         popup.classList.remove("write-us-show-error");
         popup.offsetWidth = popup.offsetWidth;

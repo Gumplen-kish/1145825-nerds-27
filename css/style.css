@@ -216,7 +216,7 @@ body {
     background-repeat: no-repeat;
 }
   
-  .slider-item:nth-of-type(3) {
+.slider-item:nth-of-type(3) {
     background-color: #eeeeee;
     background-image: url("../img/slide3-picture.png");
     background-position: bottom right;
@@ -998,14 +998,16 @@ body {
     padding: 0;
     justify-content: space-between;
     list-style: none; 
+
 }
-/*.sort-list-item {
-    display: flex;
-    justify-content: space-around
-}*/
+.sort-list-arrow {
+    width: 31px;
+}
 .sort-link {
     color: #000000;
     text-decoration: none;
+    width: 11px;
+    height: 10px;
 }
 /*Задаем ссылкам стрелочки*/
 .down-arrow::before {
@@ -1222,6 +1224,8 @@ body {
     position: relative;
     margin-right: 80px;
     padding-right: 10px;
+    width: 79px;
+    height: 79px;
 }
 /*делаем активности соц.сетей*/
 .social-link::before {
