@@ -15,8 +15,8 @@ var totalToggles=document.querySelectorAll(".slider-toggle");
 /*Слайдер */
 function totalSlider (toggles,slider) {
     for (var i=0; i<toggles.length; i++) {
-        toggles[i]addEventListener("click"function() {
-            for (var j=0;j<slider.length;j++) {
+        toggles[i]addEventListener("click",function() {
+            for (var j=0; j<slider.length; j++) {
                 slider[j].classList.remove("active");
                 slider[i].classList.add("active");
                 toggles[j]classList.remove("active-toggle");
@@ -25,6 +25,7 @@ function totalSlider (toggles,slider) {
         });
     }
 }
+toggleSlides(totalToggles, totalSlides);
 try {
     storage = localStorage.getItem("name");
     storage = localStorage.getItem("email");
