@@ -9,23 +9,26 @@ var textarea = popup.querySelector("[name=text-letter]");
 var isStorageSupport = true;
 var storage = "";
 /*Переменные для слайдера*/
-var slider=document.querySelector("slider-list");
-var totalSlider=slider.children;
-var totalToggles=document.querySelectorAll(".slider-toggle");
+var slider=document.querySelector(".slider-list");
+console.log(slider);
+var totalSlider = slider.children;
+var totalToggles = document.querySelectorAll(".slider-toggle");
+console.log(totalToggles);
+
 /*Слайдер */
-function totalSlider (toggles,slider) {
+function toggleSlides (toggles,slider) {
     for (var i=0; i<toggles.length; i++) {
-        toggles[i]addEventListener("click",function() {
+        toggles[i].addEventListener("click",function() {
             for (var j=0; j<slider.length; j++) {
                 slider[j].classList.remove("active");
                 slider[i].classList.add("active");
-                toggles[j]classList.remove("active-toggle");
-                toggles[i]classList.add("active-toggle");
+                toggles[j].classList.remove("active-toggle");
+                toggles[i].classList.add("active-toggle");
             }
         });
     }
 }
-toggleSlides(totalToggles, totalSlides);
+toggleSlides(totalToggles, totalSlider);
 try {
     storage = localStorage.getItem("name");
     storage = localStorage.getItem("email");
