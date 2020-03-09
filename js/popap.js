@@ -49,7 +49,6 @@ button.addEventListener("click",function(evt) {
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove(".write-us-show");
-    popup.classList.remove("write-us-show-error");
 });
 
 /*Отменяем отправку форму если.. */
@@ -71,7 +70,6 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       if (popup.classList.contains("write-us-show")) {
           popup.classList.remove("write-us-show");
-          popup.classList.remove("write-us-show-error");
         }
     }
 });

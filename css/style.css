@@ -3,9 +3,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
     color: black;
+    min-width: 1200px;
     background-color: #ffffff;
 }
 .container {
@@ -13,7 +15,6 @@ body {
     margin: 0 auto;
 }
 .page-header {
-    
     background-color: #eeeeee;
     width: 100%;
     height: 100%;
@@ -25,7 +26,13 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+.page-header-shop {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /*Скрытые заголовки*/
 .visually-hidden {
@@ -41,15 +48,18 @@ body {
 .inner-page-title {
     width: 100%;
     height: 100px;
-    font-size: 55px;
-    font-weight: 500;
+    font-size: 53px;
+    font-family: inherit;
     text-align: center; 
     background-color: #eeeeee;
     margin: 0;
-    padding-bottom: 115px;
-    padding-top:80px;
+    margin-bottom: 35px;
+    padding-bottom: 63px;
+    padding-top: 78px;
+    padding-right: 10px;
     color: #000000;
     line-height: 1;
+    
 }
 
 
@@ -70,14 +80,15 @@ body {
 }
 .main-nav {
     display: flex;
-    padding: 0 20px;
-    flex-wrap: wrap;
+    padding: 0px;
+    flex-wrap: no-wrap;
     box-sizing: border-box;
     background-color: #eeeeee;
     font-size: 16px;
     text-transform: uppercase;
-    margin: 0 auto;
-   
+    margin-right: 280px;
+    
+    
 
 }
 .site-nav-link {
@@ -98,7 +109,7 @@ body {
 }
 
 .logo {
-    padding-top: 49px;
+    padding-top: 43px;
     top: 50px;
     left:140px;
 }
@@ -112,11 +123,11 @@ body {
 .site-nav {
     list-style: none;
     display: flex;
-    margin: 0 0 0 180px;
+    margin: 0px;
     padding: 0;
     justify-content: center;
     flex-wrap: wrap;   
-    padding-top: 60px;*/
+    padding-top: 51px;
 }
 .site-nav-item {
     padding: 0 23px;
@@ -126,10 +137,10 @@ body {
     display: block;
     color: black;
     position: relative;
-    left: 214px;
+    left: 245px;
     top: 60px;
-    margin-left: auto;
-    padding-top: 10px;
+    margin-right: -34px;
+    padding-top: 4px;
     padding-bottom: 10px;
     padding-left: 15px;
     text-transform: uppercase;
@@ -147,8 +158,8 @@ body {
     background-image: url("../img/svg-nerds/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    top: 20%;
-    left: -25px;
+    top: 16%;
+    left: -23px;
     transform: translateY(-50%);
     
 }
@@ -245,14 +256,12 @@ body {
     font-weight: 500;
     line-height: 1;
     letter-spacing: normal;
-    font-family: "Roboto",Arial, sans-serif;
     font-stretch: normal;
     font-style: normal;
 }
-.slder-text {
+.slider-text {
     width: 360px;
     height: 40px;
-    font-family: "Roboto",sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -260,7 +269,8 @@ body {
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
-   
+    margin-bottom: 46px;
+    margin-top: -30px;
 }
   
 .slider input[type="radio"] {
@@ -269,7 +279,7 @@ body {
   
 .slider-controls {
     position: absolute;
-    bottom: 95px;
+    bottom: 116px;
     right: 50%;
     transform: translateX(50%);
 }
@@ -311,6 +321,8 @@ body {
 /*Наш сервис*/
 .our-services{
     border-bottom: 2px solid #eeeeee;
+    margin-top: -171px;
+    margin-left: -66px;
 }
 .service-list {
     list-style: none;
@@ -336,9 +348,11 @@ body {
     color: black;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 25px;
 }
 .service-desk {
-    padding-bottom: 35px;
+    padding-bottom: 15px;
+    margin-top: -6px;
     font-size: 16px;
     line-height: 1.5;
     color: black;
@@ -349,7 +363,7 @@ body {
     width: 300px;
     height: 145px;
     display: block;
-    top: 0px;
+    top: -7px;
     background-color:#eeeeee;
 }
 
@@ -374,19 +388,19 @@ body {
 }
 /*Кнопки заказать в разных активностях*/
 .order {
-    width: 160px;
-    height: 50px;
+    display: block;
+    width: 80px;
+    height: 16px;
     line-height: 1.13;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     font: inherit;
-    padding-top: 19px;
-    padding-right: 39px;
-    padding-bottom: 18px;
-    padding-left: 39px;
-    vertical-align: middle;
+    padding-top: 15px;
+    padding-right: 38px;
+    padding-bottom: 17px;
+    padding-left: 40px;
 }
 .order-web {
     background-color: #fb565a;
@@ -444,6 +458,7 @@ body {
 .about-company-p {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 35px;
 }
 .about-company-strong {
     font: inherit;
@@ -455,7 +470,7 @@ body {
     padding-bottom: 35px;
 }
 .title-list {
-    padding-top: 40px;
+    padding-top: 22px;
     padding-bottom: 35px;
     font-weight: bold;
     line-height: 1.5;
@@ -463,6 +478,8 @@ body {
 }
 .list-service {
     margin: 0;
+    margin-top: -24px;
+    margin-left: -3px;
     padding: 0px;
     line-height: 48px;
     list-style: none;
@@ -480,6 +497,7 @@ body {
     height: 2px;
     width: 25px;
     background-color: #fb565a;
+    margin-left: 4px;
 }
 
 .indicators {
@@ -499,6 +517,8 @@ body {
     line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
+    margin-left: 17px;
+    margin-top: -19px;
 }
 .indicators-list {
     display: flex;
@@ -518,8 +538,8 @@ body {
 }
 .indicators-value {
     display: block;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 43px;
+    padding-bottom: 18px;
     color: #000000;
     font-size: 45px;
     font-weight: bold;
@@ -542,6 +562,8 @@ body {
     list-style: none;
     align-items: center;
     margin: 0;
+    margin-top: -35px;
+    margin-right: -15px;
     padding: 45px 0;
     border-bottom: 2px solid #eeeeee;
 }
@@ -572,7 +594,7 @@ body {
 .partner-logo:active {
     opacity:0.1;
 }
-/*Cтилизуем блок карты*/
+/*Cтилизуем блок карты для главной страницы*/
 .map {
     display: block;
     position: relative;
@@ -604,7 +626,8 @@ body {
     padding-bottom: 50px;
     padding-left: 50px;
     position: absolute;
-    top:135px;
+    top: 131px;
+    left: 352px;
 }
 
 .map-title {
@@ -615,11 +638,14 @@ body {
     line-height: 1.67;
     width: 192px;
     height: 17px;
+    margin-left: -31px;
 }
 .map-text {
     font-size: 16px;
     font-family: inherit;
-    margin: 16px 0;
+    margin-top: 13px;
+    margin-bottom: 41px;
+    margin-left: 2px;
 }
 
 .map-phone-link {
@@ -636,7 +662,6 @@ body {
     padding-right: 40px;
     padding-bottom: 13px;
     padding-left: 40px;
-    vertical-align: text-top;
     font: inherit;
     font-weight: 500;
     line-height: 1.13;
@@ -648,9 +673,45 @@ body {
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
+    margin-bottom: 23px;
 }
-
-
+.btn-contact:hover {
+    background-color: #e74246;
+}
+.btn-contact:active {
+    opacity: 0.3;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+/*Cтилизуем блок карты для страницы католога*/
+.map-catolog {
+    margin-top: -67px;
+    display: block;
+    position: relative;
+}
+.map-marker-catolog {
+    position: absolute;
+    left: 755px;
+    top:95px;
+}
+.adress-catolog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 319px;
+    height: 308px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-left: 20px;
+    padding-top: 55px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    position: absolute;
+    top: 131px;
+    left: 352px;
+}
 
 /*Стилизуем форму обратной связи*/
 
@@ -658,10 +719,15 @@ body {
     display: none;
 }
 .write-us-show {
+    width: 960px;
+    height: 590px;
     display: block;
     animation: bounce 0.6s;
     position: absolute;
-
+    top: 1684px;
+    right: 465px;
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+    background-color: #ffffff;
 }
 .write-us-show-error {
     animation: shake 0.6s;
@@ -718,9 +784,11 @@ body {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+    margin-left: 100px;
 }
 .feedback-column {
     display: flex;
+    margin-left: 100px;
 }
 .feedback-label {
     display: block;
@@ -728,6 +796,7 @@ body {
     line-height: 1.13;
     font-weight: 700;
     color: #000000;
+    margin-left: 100px;
 }
 .feedback-input-text,
 .feedback-input-email {
@@ -750,6 +819,7 @@ body {
     margin-bottom: 47px;
     box-sizing: border-box;
     border: solid 2px #d7dcde;
+    margin-left: 100px;
 }
   
 .feedback-input-text:hover,
@@ -782,6 +852,14 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     border: none;
+}
+.send:hover {
+    background-color: #e74246;
+}
+.send:active {
+    opacity: 0.3;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
 }
 .close  {
     position: absolute;
@@ -822,11 +900,12 @@ body {
 
 .filters {
     width: 300px;
-    padding: 20px;
+    padding: 0px;
+    margin-top: 23px;
 }
 .store {
     display: flex;
-    padding-top: 60px;
+    padding-top: 0px;
     padding-bottom: 60px;
 }
 
@@ -841,7 +920,7 @@ body {
 }
 .range-filter {
     width: 260px;
-    margin-top: 49px;
+    margin-top: 53px;
     margin-bottom: 62px;
 }
 .filter-item legend {
@@ -919,7 +998,7 @@ body {
 .filter-features {
     border: none;
     padding: 0;
-    margin: 0;
+    margin: -5px;
 }
 .filter-features{
     margin-top: 50px;
@@ -930,13 +1009,14 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 2px;
 }
 .filter-grid-item  {
     padding-top: 15px;
     display: flex;
 }
 .filter-features-item {
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex;
 }
 .filter-grid-input,
@@ -946,7 +1026,7 @@ body {
 .filter-grid-input + .filter-grid-label,
 .filter-features-input + .filter-features-label {
     position: relative;
-    margin-left: 35px;
+    margin-left: 40px;
 }
 .filter-grid-input + .filter-grid-label::before,
 .filter-features-input + .filter-features-label::before {
@@ -1014,16 +1094,40 @@ body {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-    margin-top: 50px;
-    line-height: 1.13;
-
+    margin-top: 54px;
+    line-height: 3.13;
+    border-style: none;
+}
+.btn-filter:hover {
+    background-color: #dfdfdf;
+}
+.btn-filter:active {
+    opacity: 0.3;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
 }
 
+
 /*Стилизуем блог Сортировки*/
+.filter-title-gallery {
+    width: 133px;
+    height: 14px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin-left: 33px;
+}
 .gallery-maket {
     box-sizing: border-box;
     width: 800px;
     margin-left: auto;
+    margin-top: 7px;
 }
 .sort {
     display: flex;
@@ -1042,13 +1146,24 @@ body {
 }
 .sort-list {
     width: 280px;
-    padding-left: 230px;
+    padding-left: 236px;
+    padding-top: 7px;
+}
+.name-sort-link {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
 }
 .sort-list-arrow {
     width: 31px;
-    padding-right: 50px;
+    padding-right: 10px;
 }
 .sort-link {
+    opacity: 0.3;
     color: #000000;
     text-decoration: none;
     width: 11px;
@@ -1089,21 +1204,25 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
+    margin-left: 40px;
 }
 .template-item:nth-last-of-type(2n+1) {
     margin-left: 40px;
 }
 .template-item {
-    padding-top: 0;
+    padding: 0;
     width: 360px;
-    padding-bottom: 73px;
-    margin-top: 80px; 
+    margin-top: 81px; 
 }
 /*Задаем активности каталогу*/
 .catalog-item {
     position: relative;
     padding: 0;
 }
+.alignment {
+    margin-top: -15px;
+}
+
 .catalog-item::before {
     position: absolute;
     content: "";
@@ -1147,6 +1266,12 @@ body {
     text-transform: uppercase;
     font-weight: 500;
 }
+.template-name:active{
+    opacity: 0.3;
+}
+.template-name:hover {
+    color: #fb565a;
+}
 .template-info {
     color: #666666;
     line-height: 1.13;
@@ -1171,41 +1296,53 @@ body {
     box-sizing: border-box;
 }
 /*Пагинатор*/
-.paginator {
-    display: inline-block;
+.paginator-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    list-style: none;
+    margin-top: 67px;
+    margin-left: 42px;
 }
-.paginator a {
-    display: inline-block;
-    min-width: 20px;
-    height: 40px;
-    padding: 0 11px;
-    text-align: center;
-    line-height: 40px;
-    background-color: #eeeeee;
-    vertical-align: middle;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    }
-.paginator .current {
-    pointer-events: none;
-    cursor: default;
-    background-color: #ffffff;
-    box-shadow:inset 0 0 0 2px #dbdbdb;
+  
+.paginator-item {
+    margin-right: 11px;
 }
+  
 .btn-catolog {
-    line-height: 18px;
-    color: inherit;
     background-color: #eeeeee;
+    padding: 13px 17px;
+    border: 3px solid #eee;
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
 }
-.btn-catalog a:hover {
+.btn-catolog:hover {
     background-color: #dfdfdf;
 }
-.btn-catalog:active {
-    color: rgba(0, 0, 0, 0.3);
+.btn-catolog:active {
+    opacity: 0.3;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;
-    box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
+  
+.current {
+    background: transparent;
+}
+  
+.btn-catolog-next {
+    padding-right: 67px;
+    padding-left: 77px;
+  }
 
 
 /*Стилизуем подвал*/
@@ -1213,8 +1350,8 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    /*align-items: center;*/
-    
+    margin-bottom: 80px;
+    margin-left: -20px;
 }
 .page-footer {
     display: flex;
@@ -1228,32 +1365,33 @@ body {
 .footer-text {
     display: flex;
     justify-content: space-around;
-
-    
+    margin-top: -20px;
+    margin-right: 217px;
 }
-.footer-text p {
+.friend  {
     display: block;
     margin: 0;
     color: #444444;
     line-height: 22px;
+    margin-top: -3px;
 }
-.footer-text strong {
+.footer-text-strong {
     display: block;
     margin: 0;
-    margin-bottom: 10px;
-}
-.friend strong {
-    display: block;
-    padding-bottom: 12px;
+    margin-bottom: 11px;
+    width: 545px;
+    height: 35px;
+    font-family: "Roboto",Arial, sans-serif;
     font-size: 36px;
-    line-height: 1;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
     color: #000000;
 }
-.discount {
-    font-size: 16px;
-    line-height: 1.38px;
-}
+
 .social-list {
     display: flex;
     justify-content: space-around;
