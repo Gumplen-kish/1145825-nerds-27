@@ -608,8 +608,8 @@ body {
 }
 .map-marker {
     position: absolute;
-    left: 755px;
-    top:95px;
+    left: 805px;
+    top:100px;
 }
 .adress {
     display: flex;
