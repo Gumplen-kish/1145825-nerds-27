@@ -1,74 +1,85 @@
 body {
     /*Стилизуем текст всего сайта*/ 
+    /* Блочная модель */
+    min-width: 1200px;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    /* Типографика */
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
     color: black;
-    min-width: 1200px;
+    /* Оформление */
+    line-height: 24px;
     background-color: #ffffff;
 }
 .container {
+    /* Блочная модель */
     width: 1160px;
     margin: 0 auto;
 }
 .page-header {
-    background-color: #eeeeee;
+    /* Блочная модель */
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    /* Оформление */
+    background-color: #eeeeee;
 }
 .page-header .container {
+    /* Блочная модель */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .page-header-shop {
-    background-color: #eeeeee;
+    /* Блочная модель */
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    /* Оформление */
+    background-color: #eeeeee;
 }
-
 /*Скрытые заголовки*/
 .visually-hidden {
+    /* Позиционирование */
     position: absolute;
+    /* Блочная модель */
     width: 1px;
     height: 1px;
     margin: -1px;
-    border: 0;
     padding: 0;
+    /* Разное */
+    border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 .inner-page-title {
+    /* Блочная модель */
     width: 100%;
     height: 100px;
-    font-size: 53px;
-    font-family: inherit;
-    text-align: center; 
-    background-color: #eeeeee;
     margin: 0;
     margin-bottom: 35px;
     padding-bottom: 63px;
-    padding-top: 78px;
+    padding-top: 71px;
     padding-right: 10px;
+    /* Типографика */
+    font-size: 55px;
+    font-family: inherit;
+    text-align: center; 
     color: #000000;
-    line-height: 1;
-    
+    /* Оформление */
+    background-color: #eeeeee;
+    line-height: 1; 
 }
-
-
 /*Стилизуем ссылки в nav*/
 .site-nav-link {
     text-decoration: none;
     color: black;
     list-style: none;
-  }
+}
 .site-nav-link:hover {
     color: #fb565a;
 }
@@ -79,39 +90,46 @@ body {
     color: black;
 }
 .main-nav {
+    /* Блочная модель */
     display: flex;
     padding: 0px;
     flex-wrap: no-wrap;
     box-sizing: border-box;
-    background-color: #eeeeee;
+    margin-right: 280px;
+    margin-top: 12px;
+    /* Типографика */
     font-size: 16px;
     text-transform: uppercase;
-    margin-right: 280px;
-    
-    
-
+    /* Оформление */
+    background-color: #eeeeee;
 }
 .site-nav-link {
+    /* Позиционирование */
+    position: relative;
+    /* Блочная модель */
     display: block;
     padding: 12px 0;
-    position: relative;
-    font-family: "Roboto", sans-serif;
+    /* Типографика */
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.88;
 }
 .site-nav-link-active::after {
+    /* Позиционирование */
     content: "";
     position: absolute;
+    /* Блочная модель */
     display: block;
     width: 100%;
     height: 2px;
+    /* Оформление */
     background-color: #fb565a;
 }
-
 .logo {
-    padding-top: 43px;
     top: 50px;
     left:140px;
+    padding-top: 49px;
+    margin-left: -2px;
 }
 .logo:hover {
     opacity: 0.8;
@@ -119,49 +137,56 @@ body {
 .logo:active {
     opacity: 0.3;
 }
-
 .site-nav {
-    list-style: none;
+    /* Блочная модель */
     display: flex;
     margin: 0px;
     padding: 0;
     justify-content: center;
     flex-wrap: wrap;   
     padding-top: 51px;
+    list-style: none;
 }
 .site-nav-item {
     padding: 0 23px;
-    
 }
 .basket {
-    display: block;
-    color: black;
+    /* Позиционирование */
     position: relative;
-    left: 245px;
-    top: 60px;
+    left: 248px;
+    top: 58px;
+    /* Блочная модель */
+    display: block;
     margin-right: -34px;
     padding-top: 4px;
     padding-bottom: 10px;
     padding-left: 15px;
+    padding-right: 0px;
+    /* Типографика */
     text-transform: uppercase;
     text-decoration: none;
-    padding-right: 0px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    color: black;
+    /* Оформление */
     line-height: 1.88;
+    
 }
 .basket::before {
+    /* Позиционирование */
     content: "";
     position:absolute;
+    top: 16%;
+    left: -27px;
+    /* Блочная модель */
     width: 15px;
     height: 15px;
+    /* Оформление */
     background-image: url("../img/svg-nerds/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    top: 16%;
-    left: -23px;
+    /* Анимация */
     transform: translateY(-50%);
-    
 }
 .basket:hover {
     color: #fb565a;
@@ -174,22 +199,32 @@ body {
     position: relative;
     padding: 0px;
     box-sizing: border-box;
+    margin-bottom: 80px;
     background-color: #eeeeee;
 }
-  
+/*.slider-container {
+    width: 1199px;
+    height: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}*/
 .slider-list {
     display: flex;
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 .button {
+    /* Блочная модель */
     display: inline-block;
     padding-top: 19px;
     padding-right: 55px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
     padding-left: 53px;
+    margin-bottom: 80px;
     vertical-align: middle;
+    /* Типографика */
     font: inherit;
     font-weight: 500;
     color: #ffffff;
@@ -197,12 +232,12 @@ body {
     line-height: 1.13;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    /* Оформление */
+    border-radius: 2px;
     background-color: #fb565a;
     border-style: none;
     cursor: pointer;
-    text-decoration: none;
-    margin-bottom: 80px;
-    border-radius: 2px;
 }
 .button:hover {
     background-color: #e74246;
@@ -211,8 +246,8 @@ body {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b
 }
-  
 .slider-item {
+    /* Блочная модель */
     display: none;
     width: 1200px;
     height: 450px;
@@ -222,46 +257,44 @@ body {
     padding-right: 20px;
     padding-bottom: 0;
     padding-left: 20px;
-    
 }
-  
 .slider-item-active {
     display: block;
 }
-  
 .slider-item:nth-of-type(1) {
     background-color: #eeeeee;
     background-image: url("../img/slide1-picture.png");
-    background-position: bottom right;
+    background-position: right 10% bottom 75%;
     background-repeat: no-repeat;
 }
-  
 .slider-item:nth-of-type(2) {
     background-color: #eeeeee;
     background-image: url("../img/slide2-picture.png");
-    background-position: bottom right;
+    background-position: right 10% bottom 75%;
     background-repeat: no-repeat;
 }
-  
 .slider-item:nth-of-type(3) {
     background-color: #eeeeee;
     background-image: url("../img/slide3-picture.png");
-    background-position: bottom right;
+    background-position: right 10% bottom 75%;
     background-repeat: no-repeat;
 }
-  
 .slider-item-title {
-    color: #000000;
     font-size: 55px;
     font-weight: 500;
     line-height: 1;
     letter-spacing: normal;
     font-stretch: normal;
     font-style: normal;
+    color: #000000;
 }
 .slider-text {
+    /* Блочная модель */
     width: 360px;
     height: 40px;
+    margin-bottom: 45px;
+    margin-top: -28px;
+    /* Типографика */
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -269,23 +302,20 @@ body {
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
-    margin-bottom: 46px;
-    margin-top: -30px;
 }
-  
 .slider input[type="radio"] {
     display: none;
 }
-  
 .slider-controls {
     position: absolute;
-    bottom: 116px;
+    bottom: 115px;
     right: 50%;
     transform: translateX(50%);
 }
-  
 .slider-toogle-label {
+    /* Позиционирование */
     position: relative;
+    /* Блочная модель */
     display: inline-block;
     margin-top: 0;
     margin-right: 8px;
@@ -294,13 +324,14 @@ body {
     width: 18px;
     height: 18px;
     box-sizing: border-box;
+    /* Оформление */
     border: 5px solid #ffffff;
     border-radius: 50%;
     background-color: #ffffff;
     cursor: pointer;
+    /* Анимация */
     transition: background-color 0.2s;
 }
-  
 .slider-toogle:checked + .slider-toogle-label::before {
     content: "";
     position: absolute;
@@ -314,43 +345,41 @@ body {
     transform: translateX(50%) translateY(50%);
 }  
 /*Стилизуем особенности*/
-
-
-
-
 /*Наш сервис*/
 .our-services{
-    border-bottom: 2px solid #eeeeee;
     margin-top: -171px;
     margin-left: -66px;
+    border-bottom: 2px solid #eeeeee;
+   
 }
 .service-list {
-    list-style: none;
+    /* Блочная модель */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0;
-    padding-top: 60px;
-    padding-right: 20px;
+    padding-top: 0;
+    padding-right: 32px;
     padding-left: 20px;
     padding-bottom: 80px; 
+    list-style: none;
 }
 .service {
     position: relative;
     width: 300px;
-    margin-top: 165px;
+    margin-top: 152px;
     padding-top: 145px;
 }
-
 .service-title {
+    margin-top: 18px;
     font-size: 24px;
-    line-height: 1.25;
-    color: black;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 25px;
+    line-height: 1.25;
+    color: black;
 }
 .service-desk {
+    width: 244px;
     padding-bottom: 15px;
     margin-top: -6px;
     font-size: 16px;
@@ -360,13 +389,12 @@ body {
 .service::before {
     content: "";
     position:absolute;
+    top: -7px;
+    display: block;
     width: 300px;
     height: 145px;
-    display: block;
-    top: -7px;
     background-color:#eeeeee;
 }
-
 .service-web::before {
     background-image: url("../img/illustration-1.jpg");
     background-repeat: no-repeat; 
@@ -384,71 +412,100 @@ body {
     background-repeat: no-repeat; 
     background-color: #efc849;
     background-position: center;
+}
+/*Блок Веб страницы выравнивание*/
+.service-web {
+    margin-left: -8px;
+}
+.service-web-title {
+    margin-left: 2px;
+}
+.service-web-desk {
+    margin-top: -7px;
+}
+/*Блок Приложения выравнивание*/
+.service-applications {
+    margin-right: -3px;
+}
+.service-applications-desk{
+    margin-left: 2px;
+    margin-top: -7px;
+}
 
+/*Блок Презентации выравнивание*/
+.service-presentations {
+    margin-right: -24px;
 }
 /*Кнопки заказать в разных активностях*/
 .order {
     display: block;
     width: 80px;
     height: 16px;
+    padding-top: 15px;
+    padding-right: 38px;
+    padding-bottom: 17px;
+    padding-left: 40px;
     line-height: 1.13;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     font: inherit;
-    padding-top: 15px;
-    padding-right: 38px;
-    padding-bottom: 17px;
-    padding-left: 40px;
 }
 .order-web {
+    padding-right: 40px;
+    padding-bottom: 19px;
+    margin-left: 3px;
+    border-radius: 3px;
     background-color: #fb565a;
 }
 .order-web:hover {
     background-color:#e74246;
-    
 }
 .order-web:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #d7373b;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
     
 }
 .order-applications {
-    background-color:#00ca74;
+    padding-right: 40px;
+    padding-bottom: 19px;
+    margin-left: 1px;
+    border-radius: 3px;
     color: #ffffff;
+    background-color:#00ca74;
+    
 }
 .order-applications:hover {
     background-color:#00bc6c;
-    
 }
 .order-applications:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color:#00aa62;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
-    
 }
 .order-presentations {
-    background-color:#efc84a;
+    padding-right: 40px;
+    padding-bottom: 19px;
+    margin-left: 0;
+    border-radius: 3px;
     color: #ffffff;
+    background-color:#efc84a;
 }
 .order-presentations:hover {
     background-color:#eab534;
-    
 }
 .order-presentations:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color:#e5a722;
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
-    
 }
 /*Наши преимущества*/
 .about-company {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    border-bottom: 2px solid #eeeeee;
 }
 .about-company-text {
     display: flex;
@@ -456,69 +513,62 @@ body {
     width: 660px;
 }
 .about-company-p {
+    margin-top: 35px;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 35px;
 }
 .about-company-strong {
-    font: inherit;
     display: block;
+    padding-top: 39px;
+    padding-bottom: 35px;
+    font: inherit;
     font-size: 45px;
     font-weight: 500;
     line-height: 1;
-    padding-top: 40px;
-    padding-bottom: 35px;
 }
 .title-list {
-    padding-top: 22px;
-    padding-bottom: 35px;
+    padding-top: 21px;
+    margin-bottom: 12px;
     font-weight: bold;
     line-height: 1.5;
     text-transform: uppercase;
 }
 .list-service {
     margin: 0;
-    margin-top: -24px;
-    margin-left: -3px;
     padding: 0px;
     line-height: 48px;
     list-style: none;
-    margin-bottom: 80px;
+    
 }
 .list-service li {
     position: relative;
-    padding-left:40px;
+    padding-left:37px;
 }
 .list-service li::before {
     content: "";
     position: absolute;
     bottom: 50%;
-    left: 0;
+    left: -3px;
     height: 2px;
     width: 25px;
-    background-color: #fb565a;
     margin-left: 4px;
+    background-color: #fb565a;
 }
-
 .indicators {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
     width: 360px;
     margin-left: auto;
     text-align: center;
     margin-top: 40px;
 }
 .indicators-caption {
-    display: flex;
-    padding-top: 40px;
+    display: block;
+    margin-left: 1px;
+    margin-top: 29px;
     color: #000000;
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
-    margin-left: 17px;
-    margin-top: -19px;
 }
 .indicators-list {
     display: flex;
@@ -527,45 +577,52 @@ body {
     justify-content: space-between;
     list-style: none;
     flex-wrap: wrap;
+    margin-top: 16px;
 }
 .indicators-item {
     width: 105px;
     text-align: left;
-    margin-bottom: 80px;
 }
-.indicators-item p {
+.in-item-3 {
+    margin-right: 18px;
+}
+.indicators-text {
+    margin-top: 18px;
     vertical-align: baseline;
+    line-height: 1.13;
 }
 .indicators-value {
     display: block;
     padding-top: 43px;
     padding-bottom: 18px;
+    margin-top: 0; 
     color: #000000;
     font-size: 45px;
     font-weight: bold;
     line-height: 0.22;
 }
 .indicators-value sup{
+    display: inline-block;
     vertical-align: bottom;
+    font-size: 26px;
+    margin-top: 9px;
 }
-
-
-
 /*Наши партнёры*/
 .our-partners {
-    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    min-width: 1160px; 
+    margin-top: 60px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
 }
 .partners-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    list-style: none;
-    align-items: center;
     margin: 0;
-    margin-top: -35px;
-    margin-right: -15px;
-    padding: 45px 0;
-    border-bottom: 2px solid #eeeeee;
+    padding: 38px 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
 .partner-item {
     position: relative;
@@ -573,13 +630,33 @@ body {
     flex-shrink: 1;
     flex-grow: 1;
     height: 100%;
-    text-align: center;
+    text-align: center
 }
 .partner-item:not(:nth-of-type(4n+1))::after {
     content: "";
     position: absolute;
     bottom: 50%;
-    left: -2px;
+    left: -1px;
+    width: 2px;
+    height: 52px;
+    border-left: 2px solid #eeeeee;
+    transform: translateY(50%);
+}
+.barbershop:not(:nth-of-type(2n+1))::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: -11px;
+    width: 2px;
+    height: 52px;
+    border-left: 2px solid #eeeeee;
+    transform: translateY(50%);
+}
+.bear:not(:nth-of-type(2n+1))::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 9px;
     width: 2px;
     height: 52px;
     border-left: 2px solid #eeeeee;
@@ -594,86 +671,115 @@ body {
 .partner-logo:active {
     opacity:0.1;
 }
+.htmlacademy-logo {
+    margin-right: 30px;
+    margin-top: 17px;
+}
+.borodinski-logo {
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.pink-logo {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.mishka-logo {
+    margin-left: 30px;
+    margin-top: 14px;
+}
 /*Cтилизуем блок карты для главной страницы*/
 .map {
     display: block;
     position: relative;
-
 }
 .iframe-map {
-    margin-top: 80px;
+    position: relative; 
+    margin-top: 79px;
     width: 100%;
     height: 415px;
-    position: relative; 
+    border-style: none;
 }
 .map-marker {
     position: absolute;
-    left: 805px;
+    left: 518px;
     top:100px;
+    height: auto;
+    width: 367px;
 }
 .adress {
+    /* Позиционирование */
+    position: absolute;
+    top: 133px;
+    left: 120px;
+    /* Блочная модель */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     width: 319px;
     height: 308px;
-    background-color: white;
     box-sizing: border-box;
     margin-left: 20px;
     padding-top: 55px;
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
-    position: absolute;
-    top: 131px;
-    left: 352px;
+    /* Оформление */
+    background-color: white;
 }
-
 .map-title {
+    height: 17px;
+    margin-right: 26px;
+    margin-top: 56px;
     font-family: inherit;
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 1.67;
-    width: 192px;
-    height: 17px;
-    margin-left: -31px;
 }
 .map-text {
+    margin-right: 17px;
+    margin-top: 35px;
+    line-height: 1.13;
+    font-size: 16px;
+}
+.map-phone {
+    margin-right: 48px;
+    margin-bottom: 34px;
+    margin-top: 16px;
     font-size: 16px;
     font-family: inherit;
-    margin-top: 13px;
-    margin-bottom: 41px;
-    margin-left: 2px;
 }
-
 .map-phone-link {
     text-decoration: none;
     color: #000000;
 }
 .btn-contact {
+    /* Блочная модель */
+    display: inline-block;
     width: 220px;
     height: 50px;
-    color: white;
-    background-color: #fb565a;
-    display: inline-block;
-    padding-top: 13px;
+    padding-top: 18px;
     padding-right: 40px;
     padding-bottom: 13px;
     padding-left: 40px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    /* Типографика */
     font: inherit;
     font-weight: 500;
     line-height: 1.13;
     text-align: center;
     text-transform: uppercase;
-    border-style: none;
-    cursor: pointer;
-    box-sizing: border-box;
+    text-decoration: none;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-    margin-bottom: 23px;
+    color: white;
+    /* Оформление */
+    background-color: #fb565a;
+    border-radius: 3px;
+    cursor: pointer;
 }
 .btn-contact:hover {
     background-color: #e74246;
@@ -685,49 +791,54 @@ body {
 }
 /*Cтилизуем блок карты для страницы католога*/
 .map-catolog {
-    margin-top: -67px;
-    display: block;
     position: relative;
+    display: block;
+    margin-top: -67px;
 }
-.map-marker-catolog {
+.map-marker-shop {
     position: absolute;
-    left: 755px;
-    top:95px;
+    left: 515px;
+    top: 100px;
 }
-.adress-catolog {
+.adress-shop {
+    /* Позиционирование */
+    position: absolute;
+    top: 133px;
+    left: 120px;
+    /* Блочная модель */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     width: 319px;
     height: 308px;
-    background-color: white;
-    box-sizing: border-box;
     margin-left: 20px;
     padding-top: 55px;
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
-    position: absolute;
-    top: 131px;
-    left: 352px;
+    /* Оформление */
+    background-color: white;
+    box-sizing: border-box;
 }
-
 /*Стилизуем форму обратной связи*/
-
 .write-us {
     display: none;
 }
 .write-us-show {
-    width: 960px;
-    height: 590px;
-    display: block;
-    animation: bounce 0.6s;
+    /* Позиционирование */
     position: absolute;
     top: 1684px;
-    right: 465px;
+    right: 16%;
+    /* Блочная модель */
+    display: block;
+    width: 960px;
+    height: 590px;
+    /* Оформление */
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
     background-color: #ffffff;
+    /* Анимация */
+    animation: bounce 0.6s;
 }
 .write-us-show-error {
     animation: shake 0.6s;
@@ -779,12 +890,12 @@ body {
 }
 .feedback {
     display: block;
-    width: 307px;
+    width: 311px;
     height: 33px;
+    margin-left: 100px;
     font-size: 45px;
     line-height: 45px;
-    font-weight: 500;
-    margin-left: 100px;
+    font-weight: 500; 
 }
 .feedback-column {
     display: flex;
@@ -793,19 +904,19 @@ body {
 .feedback-label {
     display: block;
     padding-bottom: 12px;
+    margin-left: 100px;
     line-height: 1.13;
     font-weight: 700;
     color: #000000;
-    margin-left: 100px;
 }
 .feedback-input-text,
 .feedback-input-email {
-    font: inherit;
     width: 360px;
     height: 50px;
     box-sizing: border-box;
     padding-left: 15px;
     vertical-align: middle;
+    font: inherit;
     color: rgba(68, 68, 68, 0.5);
     border: solid 2px #d7dcde;
 }
@@ -813,21 +924,20 @@ body {
     margin-right: 40px;
 }
 .feedback-textarea {
-    resize: none;
     width: 760px;
     height: 118px;
+    padding: 11px;
     margin-bottom: 47px;
+    margin-left: 100px;
     box-sizing: border-box;
     border: solid 2px #d7dcde;
-    margin-left: 100px;
+    resize: none;
 }
-  
 .feedback-input-text:hover,
 .feedback-input-email:hover,
 .feedback-textarea:hover {
     border-color: #b4b9bb;
 }
-  
 .feedback-input-text:focus,
 .feedback-input-email:focus,
 .feedback-textarea:focus {
@@ -835,7 +945,6 @@ body {
     color: #444444;
     border-color: #000000;
 }
-  
 .feedback-input-text:invalid,
 .feedback-input-email:invalid,
 .feedback-textarea:invalid {
@@ -843,14 +952,14 @@ body {
     border-color: #e74246;
 }
 .send {
-    margin-left: 100px;
-    margin-bottom: 85px;
     width: 260px;
     height: 50px;
-    color: white;
-    background-color: #fb565a;
+    margin-left: 100px;
+    margin-bottom: 85px;
     font-weight: 500;
     text-transform: uppercase;
+    color: white;
+    background-color: #fb565a;
     border: none;
 }
 .send:hover {
@@ -863,13 +972,13 @@ body {
 }
 .close  {
     position: absolute;
-    width: 21px;
-    height: 21px;
-    opacity: 0.3;
     top: 76px;
     right: 90px;
+    width: 21px;
+    height: 21px;
     text-align: center;
     vertical-align: middle;
+    opacity: 0.3;
 }
 .close::before,
 .close::after {
@@ -877,7 +986,6 @@ body {
     left: 15px;
     content: "";
     height:21px;
-    width: 21px;
     width: 2px;
     background-color:red;
     transform: translateX(849px), translateY(491px);
@@ -894,10 +1002,7 @@ body {
 .close:active {
     opacity: 0.1;
 }
-
-
 /*страничка католога*/
-
 .filters {
     width: 300px;
     padding: 0px;
@@ -908,22 +1013,25 @@ body {
     padding-top: 0px;
     padding-bottom: 60px;
 }
-
-
 /*Стилизуем блок Стоимость*/
 .filter-item {
+    display: flex;
+    margin-left: 0;
+    /*width: 260px;
+    margin: 50px auto; 
     margin: 0;
     padding: 0;
-    border: none;
-    width: 260px;
-    margin: 50px auto; 
+    border: none;*/
 }
 .range-filter {
     width: 260px;
-    margin-top: 53px;
+    margin-top: 57px;
+    margin-left: 5px;
     margin-bottom: 62px;
 }
-.filter-item legend {
+.cost-legend {
+    margin-left: 4px;
+    font-family: "Roboto","Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -991,33 +1099,32 @@ body {
 .max-price {
     text-align: right;
 }
-
 /*Стилизуем радиокнопки и чекбоксы*/
 .filter-item,
 .filter-grid,
 .filter-features {
-    border: none;
     padding: 0;
     margin: -5px;
+    border: none;
 }
 .filter-features{
-    margin-top: 50px;
+    margin-top: 49px;
 }
 .filter-features-list,
 .filter-grid-list,
 .sortr-list {
     margin: 0;
     padding: 0;
+    margin-top: 0;
     list-style: none;
-    margin-top: 2px;
 }
 .filter-grid-item  {
-    padding-top: 15px;
     display: flex;
+    padding-top: 15px;
 }
 .filter-features-item {
-    padding-top: 15px;
     display: flex;
+    padding-top: 15px;
 }
 .filter-grid-input,
 .filter-features-input {
@@ -1052,6 +1159,10 @@ body {
 .filter-grid-input:checked + .filter-grid-label:hover::before {
     opacity: 1;
 }
+.filter-features-label:hover::before,
+.filter-features-input:checked + .filter-features-label:hover::before {
+    opacity: 1;
+}
 .filter-features-input + .filter-features-label::before {
     width: 27px;
     height: 27px;
@@ -1063,14 +1174,8 @@ body {
     background-repeat: no-repeat;
     opacity: 0.4; 
 }
-
-.filter-item {
-    display: flex;
-}
-
-
-
 .filter-title {
+    margin-left: 5px;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.67;
@@ -1083,10 +1188,12 @@ body {
     margin-right: 140px;    
 }
 .btn-filter {
+    /* Блочная модель */
     width: 260px;
     height: 50px;
-    background-color: #eeeeee;
-    font-family: "Roboto",sans-serif;
+    margin-top: 54px;
+    /* Типографика */
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -1094,8 +1201,9 @@ body {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-    margin-top: 54px;
     line-height: 3.13;
+    /* Оформление */
+    background-color: #eeeeee;
     border-style: none;
 }
 .btn-filter:hover {
@@ -1106,12 +1214,17 @@ body {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;
 }
-
-
 /*Стилизуем блог Сортировки*/
+.bar {
+    width: 30%;
+    margin-left: 20%; 
+}
 .filter-title-gallery {
+    /* Блочная модель */
     width: 133px;
     height: 14px;
+    margin-left: 39px;
+    /* Типографика */
     font-family: inherit;
     font-size: 18px;
     font-weight: bold;
@@ -1121,20 +1234,18 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-    margin-left: 33px;
 }
-.gallery-maket {
-    box-sizing: border-box;
+.gallery-template {
     width: 800px;
     margin-left: auto;
     margin-top: 7px;
+    box-sizing: border-box;
 }
 .sort {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    
 }
 .sort-list,
 .sort-list-arrow {
@@ -1146,8 +1257,11 @@ body {
 }
 .sort-list {
     width: 280px;
-    padding-left: 236px;
-    padding-top: 7px;
+    padding-left: 210px;
+    padding-top: 2px;
+}
+.at-the-price {
+    margin-left: 9px;
 }
 .name-sort-link {
     font-size: 14px;
@@ -1160,14 +1274,15 @@ body {
 }
 .sort-list-arrow {
     width: 31px;
+    margin-bottom: 8px;
     padding-right: 10px;
 }
 .sort-link {
-    opacity: 0.3;
-    color: #000000;
-    text-decoration: none;
     width: 11px;
     height: 10px;
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.3;
 }
 /*Задаем ссылкам стрелочки*/
 .down-arrow::before {
@@ -1193,7 +1308,6 @@ body {
 .sort-link:active {
     opacity: 1;
 }
-
 /*Стилизуем каталог*/
 /*Говорим каталогу, что он флекс*/
 .templates-list {
@@ -1201,17 +1315,15 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
     margin-left: 40px;
 }
-.template-item:nth-last-of-type(2n+1) {
-    margin-left: 40px;
-}
 .template-item {
-    padding: 0;
     width: 360px;
+    padding: 0;
+    padding-right: 40px;
     margin-top: 81px; 
 }
 /*Задаем активности каталогу*/
@@ -1222,13 +1334,15 @@ body {
 .alignment {
     margin-top: -15px;
 }
-
 .catalog-item::before {
+    /* Позиционирование */
     position: absolute;
     content: "";
     top:-40px;
+    /* Блочная модель */
     width: 100%;
     height: 40px;
+    /* Оформление */
     background-color: #ffffff;
     background-image: url("../img/svg-nerds/browser.svg");
     background-repeat: no-repeat;
@@ -1240,23 +1354,25 @@ body {
 }
 /*Стилизуем инфо блог к шаблонам*/
 .template-text {
+    /* Позиционирование */
     position: absolute;
     bottom: 8px;
-    background-color: #eeeeee;
+    /* Блочная модель */
     display: none;
+    width: 100%;
+    min-height: 231px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    min-height: 231px;
     box-sizing: border-box;
     text-align: center;
     padding-top: 35px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 40px;
+     /* Оформление */
+    background-color: #eeeeee;
 }
-
 .catalog-item:hover .template-text {
     display: block;
 }
@@ -1277,23 +1393,26 @@ body {
     line-height: 1.13;
 }
 .buy-template {
+    /* Блочная модель */
     display: inline-block;
+    width: 200px;
+    height: 50px;
     padding-top: 13px;
     padding-right: 40px;
     padding-bottom: 13px;
     padding-left: 40px;
-    width: 200px;
-    height: 50px;
-    line-height: 1.13;
-    background-color: #fb565a;
-    color: #ffffff;
+    box-sizing: border-box;
+    /* Типографика */
+    vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     font: inherit;
-    vertical-align: middle;
+    line-height: 1.13;
+    color: #ffffff;
+    /* Оформление */
+    background-color: #fb565a;
     border-style: none;
-    box-sizing: border-box;
 }
 .buy-template:hover {
     background-color: #e74246;
@@ -1312,15 +1431,13 @@ body {
     margin-top: 67px;
     margin-left: 42px;
 }
-  
 .paginator-item {
     margin-right: 11px;
 }
-  
 .btn-catolog {
-    background-color: #eeeeee;
+    /* Блочная модель */
     padding: 13px 17px;
-    border: 3px solid #eee;
+     /* Типографика */
     font-size: 16px;
     font-weight: 700;
     font-stretch: normal;
@@ -1328,9 +1445,12 @@ body {
     line-height: 1.13;
     letter-spacing: normal;
     text-align: center;
-    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    color: #000000;
+    /* Оформление */
+    background-color: #eeeeee;
+    border: 3px solid #eee;
     border-radius: 3px;
 }
 .btn-catolog:hover {
@@ -1341,23 +1461,35 @@ body {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;
 }
-  
 .current {
-    background: transparent;
+    /* Блочная модель */
+    padding: 13px 17px;
+     /* Типографика */
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    /* Оформление */
+    background-color: transparent;
+    border: 3px solid #eee;
+    border-radius: 3px;
 }
-  
 .btn-catolog-next {
     padding-right: 67px;
     padding-left: 77px;
   }
-
-
 /*Стилизуем подвал*/
 .social-network {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     margin-left: -20px;
 }
 .page-footer {
@@ -1366,29 +1498,27 @@ body {
     min-height: 217px;
     align-items: center;
     vertical-align: center;
-
 }
-
 .footer-text {
-    display: flex;
-    justify-content: space-around;
-    margin-top: -20px;
     margin-right: 217px;
 }
 .friend  {
     display: block;
     margin: 0;
-    color: #444444;
+    margin-top: 0px;
     line-height: 22px;
-    margin-top: -3px;
+    color: #444444;
 }
 .footer-text-strong {
+    /* Блочная модель */
     display: block;
-    margin: 0;
-    margin-bottom: 11px;
     width: 545px;
     height: 35px;
-    font-family: "Roboto",Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 9px;
+    margin-top: 5px;
+    /* Типографика */
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
@@ -1398,7 +1528,6 @@ body {
     text-align: left;
     color: #000000;
 }
-
 .social-list {
     display: flex;
     justify-content: space-around;
@@ -1412,26 +1541,29 @@ body {
 }
 .social-link {
     position: relative;
-    margin-right: 80px;
-    padding-right: 10px;
     width: 79px;
     height: 79px;
+    margin-right: 80px;
+    padding-right: 10px;
 }
 /*делаем активности соц.сетей*/
 .social-link::before {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    content: "";
+    /* Позиционирование */
     position:relative;
+    content: "";
+    /* Блочная модель */
+    display: flex;
     width: 79px;
     height: 79px;
-    display: block;
-    transform: translateY(50%);
+    align-items: center;
+    justify-content: center;
+    /* Оформление */
     background-color:#e1e1e1;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+    /* Анимация */
+    transform: translateY(50%);
 }
 .social-vk::before {
     background-image: url("../img/svg-nerds/vk-icon.svg");
@@ -1449,4 +1581,3 @@ body {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
 }
-

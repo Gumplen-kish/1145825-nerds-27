@@ -14,7 +14,6 @@ console.log(slider);
 var totalSlider = slider.children;
 var totalToggles = document.querySelectorAll(".slider-toggle");
 console.log(totalToggles);
-
 /*Слайдер */
 function toggleSlides (toggles,slider) {
     for (var i=0; i<toggles.length; i++) {
@@ -50,7 +49,6 @@ close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove(".write-us-show");
 });
-
 /*Отменяем отправку форму если.. */
 form.addEventListener("submit",function(evt) {
     if (!name.value ||!email.value) {
