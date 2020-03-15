@@ -1501,6 +1501,7 @@ body {
 }
 .footer-text {
     margin-right: 217px;
+    margin-bottom: 9px;
 }
 .friend  {
     display: block;
@@ -1515,8 +1516,8 @@ body {
     width: 545px;
     height: 35px;
     margin: 0;
-    margin-bottom: 9px;
-    margin-top: 5px;
+    margin-bottom: 11px;
+    margin-top: 0px;
     /* Типографика */
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 36px;
