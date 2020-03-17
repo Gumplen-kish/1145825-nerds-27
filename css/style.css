@@ -165,7 +165,7 @@ body {
     /* Типографика */
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     color: black;
     /* Оформление */
@@ -1223,7 +1223,6 @@ body {
     /* Блочная модель */
     width: 133px;
     height: 14px;
-    margin-left: 39px;
     /* Типографика */
     font-family: inherit;
     font-size: 18px;
@@ -1318,12 +1317,10 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    margin-left: 40px;
 }
 .template-item {
     width: 360px;
     padding: 0;
-    padding-right: 40px;
     margin-top: 81px; 
 }
 /*Задаем активности каталогу*/
