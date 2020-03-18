@@ -228,8 +228,8 @@ body {
   padding-bottom: 15px;
   padding-left: 53px;
   margin-bottom: 80px;
-  vertical-align: middle;
   /* Типографика */
+  vertical-align: middle;
   font: inherit;
   font-weight: 500;
   color: #ffffff;
@@ -329,6 +329,7 @@ body {
   width: 18px;
   height: 18px;
   box-sizing: border-box;
+  vertical-align: middle;
   /* Оформление */
   border: 5px solid #ffffff;
   border-radius: 50%;
@@ -706,16 +707,16 @@ body {
 }
 .map-marker {
   position: absolute;
-  left: 518px;
-  top:100px;
+  left: 372px;
+  top: -397px;
   height: auto;
   width: 367px;
 }
 .adress {
   /* Позиционирование */
   position: absolute;
-  top: 133px;
-  left: 119px;
+  top: -367px;
+  left: -20px;
   /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
@@ -771,6 +772,7 @@ body {
   margin-bottom: 60px;
   box-sizing: border-box;
   /* Типографика */
+  vertical-align: middle;
   font: inherit;
   font-weight: 500;
   line-height: 1.13;
@@ -802,8 +804,8 @@ body {
 }
 .map-marker-shop {
   position: absolute;
-  left: 515px;
-  top: 100px;
+  left: 375px;
+  top: -400px;
 }
 .adress-shop {
   /* Позиционирование */
@@ -979,11 +981,14 @@ body {
   position: absolute;
   top: 76px;
   right: 90px;
+  display: block;
   width: 21px;
   height: 21px;
   text-align: center;
-  vertical-align: middle;
+  border: none;
   opacity: 0.3;
+  cursor: pointer;
+  background-color:transparent;
 }
 .close::before,
 .close::after {
@@ -1086,6 +1091,7 @@ body {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  vertical-align: middle;
   font-size: 16px;
   text-transform: uppercase;
 }

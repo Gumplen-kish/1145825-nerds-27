@@ -37,6 +37,7 @@ catch (err) {
 }
 /*Задаем добавление класса при клике на кнопку*/
 button.addEventListener("click",function(evt) {
+  evt.preventDefault();
   popup.classList.add("write-us-show");
   if  (storage) {
     name.value=storage;
@@ -49,7 +50,7 @@ button.addEventListener("click",function(evt) {
 /*Задаем удаление класса при клике на кнопку*/
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove(".write-us-show");
+  popup.classList.remove("write-us-show");
 });
 /*Отменяем отправку форму если.. */
 form.addEventListener("submit",function(evt) {
