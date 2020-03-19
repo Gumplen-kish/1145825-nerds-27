@@ -1,20 +1,20 @@
 body {
   /*Стилизуем текст всего сайта*/
-  /* Блочная модель */
+  /*Блочная модель*/
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  /* Типографика */
+  /*Типографика*/
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: black;
-  /* Оформление */
+  /*Оформление*/
   line-height: 24px;
   background-color: #ffffff;
 }
 .container {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 1160px;
   margin: 0 auto;
 }
@@ -24,45 +24,45 @@ body {
   position: relative;
 }
 .page-header {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
 }
 .page-header .container {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .page-header-shop {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
 }
 /*Скрытые заголовки*/
 .visually-hidden {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: absolute;
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-  /* Разное */
+  /*Разное*/
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .inner-page-title {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 100%;
   height: 100px;
   margin: 0;
@@ -70,12 +70,12 @@ body {
   padding-bottom: 63px;
   padding-top: 71px;
   padding-right: 0;
-  /* Типографика */
+  /*Типографика*/
   font-size: 55px;
   font-family: inherit;
   text-align: center; 
   color: #000000;
-  /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
   line-height: 1; 
 }
@@ -95,39 +95,39 @@ body {
   color: black;
 }
 .main-nav {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   padding: 0px;
   flex-wrap: no-wrap;
   box-sizing: border-box;
   margin-right: 280px;
   margin-top: 12px;
-  /* Типографика */
+  /*Типографика*/
   font-size: 16px;
   text-transform: uppercase;
-  /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
 }
 .site-nav-link {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: relative;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: block;
   padding: 12px 0;
-  /* Типографика */
+  /*Типографика*/
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   line-height: 1.88;
 }
 .site-nav-link-active::after {
-  /* Позиционирование */
+  /*Позиционирование*/
   content: "";
   position: absolute;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: block;
   width: 100%;
   height: 2px;
-  /* Оформление */
+  /*Оформление*/
   background-color: #fb565a;
 }
 .logo {
@@ -143,12 +143,12 @@ body {
   opacity: 0.3;
 }
 .site-nav {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   margin: 0px;
   padding: 0;
   justify-content: center;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   padding-top: 51px;
   list-style: none;
 }
@@ -156,41 +156,40 @@ body {
   padding: 0 23px;
 }
 .basket {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: relative;
   left: 248px;
   top: 58px;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: block;
   margin-right: -34px;
   padding-top: 4px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 0px;
-  /* Типографика */
+  /*Типографика*/
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   color: black;
-  /* Оформление */
+  /*Оформление*/
   line-height: 1.88;
-  
 }
 .basket::before {
-  /* Позиционирование */
+  /*Позиционирование*/
   content: "";
   position:absolute;
   top: 16%;
   left: -27px;
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 15px;
   height: 15px;
-  /* Оформление */
+  /*Оформление*/
   background-image: url("../img/svg-nerds/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* Анимация */
+  /*Анимация*/
   transform: translateY(-50%);
 }
 .basket:hover {
@@ -207,13 +206,6 @@ body {
   margin-bottom: 80px;
   background-color: #eeeeee;
 }
-/*.slider-container {
-  width: 1199px;
-  height: 450px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
-}*/
 .slider-list {
   display: flex;
   margin: 0;
@@ -221,14 +213,14 @@ body {
   list-style: none;
 }
 .button {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: inline-block;
   padding-top: 19px;
   padding-right: 55px;
   padding-bottom: 15px;
   padding-left: 53px;
   margin-bottom: 80px;
-  /* Типографика */
+  /*Типографика*/
   vertical-align: middle;
   font: inherit;
   font-weight: 500;
@@ -238,7 +230,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  /* Оформление */
+  /*Оформление*/
   border-radius: 2px;
   background-color: #fb565a;
   border-style: none;
@@ -252,7 +244,7 @@ body {
   background-color: #d7373b
 }
 .slider-item {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: none;
   width: 1200px;
   height: 450px;
@@ -294,12 +286,12 @@ body {
   color: #000000;
 }
 .slider-text {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 360px;
   height: 40px;
   margin-bottom: 45px;
   margin-top: -28px;
-  /* Типографика */
+  /*Типографика*/
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -318,9 +310,9 @@ body {
   transform: translateX(50%);
 }
 .slider-toogle-label {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: relative;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: inline-block;
   margin-top: 0;
   margin-right: 8px;
@@ -356,10 +348,9 @@ body {
   margin-top: -171px;
   margin-left: -66px;
   border-bottom: 2px solid #eeeeee;
- 
 }
 .service-list {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -713,11 +704,11 @@ body {
   width: 367px;
 }
 .adress {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: absolute;
   top: -367px;
   left: -20px;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -730,7 +721,7 @@ body {
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
-  /* Оформление */
+  /*Оформление*/
   background-color: white;
 }
 .map-title {
@@ -761,7 +752,7 @@ body {
   color: #000000;
 }
 .btn-contact {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: inline-block;
   width: 220px;
   height: 50px;
@@ -771,7 +762,7 @@ body {
   padding-left: 40px;
   margin-bottom: 60px;
   box-sizing: border-box;
-  /* Типографика */
+  /*Типографика*/
   vertical-align: middle;
   font: inherit;
   font-weight: 500;
@@ -783,7 +774,7 @@ body {
   font-style: normal;
   letter-spacing: normal;
   color: white;
-  /* Оформление */
+  /*Оформление*/
   background-color: #fb565a;
   border-radius: 3px;
   cursor: pointer;
@@ -808,11 +799,11 @@ body {
   top: -400px;
 }
 .adress-shop {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: absolute;
   top: -369px;
   left: -19px;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -824,7 +815,7 @@ body {
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
-  /* Оформление */
+  /*Оформление*/
   background-color: white;
   box-sizing: border-box;
 }
@@ -833,18 +824,18 @@ body {
   display: none;
 }
 .write-us-show {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: absolute;
   top: 1684px;
   right: 16%;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: block;
   width: 960px;
   height: 590px;
-  /* Оформление */
+  /*Оформление*/
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
-  /* Анимация */
+  /*Анимация*/
   animation: bounce 0.6s;
 }
 .write-us-show-error {
@@ -977,7 +968,7 @@ body {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
-.close  {
+.close {
   position: absolute;
   top: 76px;
   right: 90px;
@@ -1011,6 +1002,7 @@ body {
 }
 .close:active {
   opacity: 0.1;
+  outline: 0 solid transparent;
 }
 /*страничка католога*/
 .filters {
@@ -1027,11 +1019,6 @@ body {
 .filter-item {
   display: flex;
   margin-left: 0;
-  /*width: 260px;
-  margin: 50px auto; 
-  margin: 0;
-  padding: 0;
-  border: none;*/
 }
 .range-filter {
   width: 260px;
@@ -1081,7 +1068,7 @@ body {
 }
 .range-controls .toggle-min {
   left: 50px;
-} 
+}
 .range-controls .toggle-max {
   left: 110px;
 }
@@ -1118,7 +1105,7 @@ body {
   margin: -5px;
   border: none;
 }
-.filter-features{
+.filter-features {
   margin-top: 49px;
 }
 .filter-features-list,
@@ -1129,7 +1116,7 @@ body {
   margin-top: 0;
   list-style: none;
 }
-.filter-grid-item  {
+.filter-grid-item {
   display: flex;
   padding-top: 15px;
 }
@@ -1183,7 +1170,7 @@ body {
 .filter-features-input:checked + .filter-features-label::before {
   background-image: url("../img/svg-nerds/checkbox-on.svg");
   background-repeat: no-repeat;
-  opacity: 0.4; 
+  opacity: 0.4;
 }
 .filter-title {
   margin-left: 5px;
@@ -1192,18 +1179,18 @@ body {
   line-height: 1.67;
   letter-spacing: 0.18px;
   text-transform: uppercase;
-  color: #000000; 
+  color: #000000;
 }
 .grid {
   width: 260px;
-  margin-right: 140px;    
+  margin-right: 140px;
 }
 .btn-filter {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 260px;
   height: 50px;
   margin-top: 54px;
-  /* Типографика */
+  /*Типографика*/
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1213,7 +1200,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   line-height: 3.13;
-  /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
   border-style: none;
 }
@@ -1231,10 +1218,10 @@ body {
   margin-left: 20%; 
 }
 .filter-title-gallery {
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 133px;
   height: 14px;
-  /* Типографика */
+  /*Типографика*/
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
@@ -1343,14 +1330,14 @@ body {
   margin-top: -15px;
 }
 .catalog-item::before {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: absolute;
   content: "";
   top:-40px;
-  /* Блочная модель */
+  /*Блочная модель*/
   width: 100%;
   height: 40px;
-  /* Оформление */
+  /*Оформление*/
   background-color: #ffffff;
   background-image: url("../img/svg-nerds/browser.svg");
   background-repeat: no-repeat;
@@ -1362,10 +1349,10 @@ body {
 }
 /*Стилизуем инфо блог к шаблонам*/
 .template-text {
-  /* Позиционирование */
+  /*Позиционирование*/
   position: absolute;
   bottom: 8px;
-  /* Блочная модель */
+  /*Блочная модель*/
   display: none;
   width: 100%;
   min-height: 231px;
@@ -1378,7 +1365,7 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 40px;
-   /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
 }
 .catalog-item:hover .template-text {
@@ -1401,7 +1388,7 @@ body {
   line-height: 1.13;
 }
 .buy-template {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: inline-block;
   width: 200px;
   height: 50px;
@@ -1410,7 +1397,7 @@ body {
   padding-bottom: 13px;
   padding-left: 40px;
   box-sizing: border-box;
-  /* Типографика */
+  /*Типографика*/
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
@@ -1418,7 +1405,7 @@ body {
   font: inherit;
   line-height: 1.13;
   color: #ffffff;
-  /* Оформление */
+  /*Оформление*/
   background-color: #fb565a;
   border-style: none;
 }
@@ -1442,9 +1429,9 @@ body {
   margin-right: 11px;
 }
 .btn-catolog {
-  /* Блочная модель */
+  /*Блочная модель*/
   padding: 13px 17px;
-   /* Типографика */
+  /*Типографика*/
   font-size: 16px;
   font-weight: 700;
   font-stretch: normal;
@@ -1455,7 +1442,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  /* Оформление */
+  /*Оформление*/
   background-color: #eeeeee;
   border: 3px solid #eee;
   border-radius: 3px;
@@ -1469,9 +1456,9 @@ body {
   background-color: #d5d5d5;
 }
 .current {
-  /* Блочная модель */
+  /*Блочная модель*/
   padding: 13px 17px;
-   /* Типографика */
+  /*Типографика*/
   font-size: 16px;
   font-weight: 700;
   font-stretch: normal;
@@ -1482,7 +1469,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  /* Оформление */
+  /*Оформление*/
   background-color: transparent;
   border: 3px solid #eee;
   border-radius: 3px;
@@ -1507,10 +1494,11 @@ body {
   vertical-align: center;
 }
 .footer-text {
-  margin-right: 217px;
+  width: 560px;
+  margin-right: 201px;
   margin-bottom: 9px;
 }
-.friend  {
+.friend {
   display: block;
   margin: 0;
   margin-top: 0px;
@@ -1518,14 +1506,14 @@ body {
   color: #444444;
 }
 .footer-text-strong {
-  /* Блочная модель */
+  /*Блочная модель*/
   display: block;
   width: 545px;
   height: 35px;
   margin: 0;
   margin-bottom: 11px;
   margin-top: 0px;
-  /* Типографика */
+  /*Типографика*/
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 36px;
   font-weight: bold;
@@ -1556,21 +1544,21 @@ body {
 }
 /*делаем активности соц.сетей*/
 .social-link::before {
-  /* Позиционирование */
+  /*Позиционирование*/
   position:relative;
   content: "";
-  /* Блочная модель */
+  /*Блочная модель*/
   display: flex;
   width: 79px;
   height: 79px;
   align-items: center;
   justify-content: center;
-  /* Оформление */
+  /*Оформление*/
   background-color:#e1e1e1;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  /* Анимация */
+  /*Анимация*/
   transform: translateY(50%);
 }
 .social-vk::before {
